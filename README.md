@@ -24,9 +24,9 @@
 ## 🗞️ TODAY'S LEAD STORY: THE GREAT BLÅHAJ APOCALYPSE
 
 <p align="center">
-  <img src="bunbunmaru_newspaper.png" alt="文々。新聞 號外: The Blue Horror of Gensokyo" width="760" />
+  <img src="assets/bunbunmaru_newspaper.png" alt="文々。新聞 號外: The Blue Horror of Gensokyo" width="760" />
   <br>
-  <em><b>文々。新聞 號外 (EXTRA):</b> Authentic Bohemian Archive in Japanese Red broadsheet printed automatically via <code>press.py</code>.</em>
+  <em><b>文々。新聞 號外 (EXTRA):</b> Authentic Bohemian Archive in Japanese Red broadsheet printed automatically via <code>pressing/</code>.</em>
 </p>
 
 ### 🦈 BLUE HORROR OF GENSOYKO: THE OCEAN SHRINE HAS INVADED YOUR PRIVATE HOME!
@@ -100,20 +100,26 @@ ollama create bunbunmaru -f Modelfile
 ### 3. Print the Scoop!
 Hand photographic evidence to Aya and let the Tengu press blow it completely out of proportion:
 ```bash
-# Analyze any image (defaults to blahaj.jpg if omitted)
+# Analyze any image (defaults to assets/blahaj.jpg if omitted)
 python3 bunbunmaru.py path/to/your/evidence.jpg
 ```
 
 This single command triggers the full pipeline:
 1. 🪶 Interrogates the image using `bunbunmaru` in Ollama.
-2. 📢 Emits structured tabloid JSON.
-3. 🖨️ Automatically invokes [`press.py`](press.py) to print:
+2. 📖 Grounds character reactions and commercial sponsors using `data/gensokyo_directory.json`.
+3. 📢 Emits structured tabloid JSON with custom ads and eyewitness quotes.
+4. 🖨️ Automatically invokes [`pressing/press.py`](pressing/press.py) to print:
    - `bunbunmaru_newspaper.html` (interactive web broadsheet)
-   - `bunbunmaru_newspaper.png` (high-res broadsheet clipping)
+   - `assets/bunbunmaru_newspaper.png` (high-res broadsheet clipping)
 
 Or run the printing press standalone with any image:
 ```bash
-python3 press.py blahaj.jpg
+python3 pressing/press.py assets/blahaj.jpg
+```
+
+Or re-harvest the latest Touhou lore from Touhou Wiki anytime:
+```bash
+python3 scrapping/scraper.py
 ```
 
 ---
@@ -155,14 +161,21 @@ Every dispatch filed to the Bunbunmaru Printing Press must conform strictly to t
 
 ```
 BunBunMaru_LLM/
-├── Modelfile                 # The sacred editorial decrees of Aya Shameimaru
-├── bunbunmaru.py             # Hot-wire reporting pipeline script
-├── press.py                  # Bohemian Archive broadsheet layout & print engine
-├── scraper.py                # Automated Touhou Wiki lore & character harvester
-├── gensokyo_directory.json   # Comprehensive 182-character dossier & commercial sponsors
-├── blahaj.jpg                # Exhibit A: The Blue Horror of Gensokyo
-├── bunbunmaru_newspaper.png  # Rendered sample broadsheet clipping
-└── README.md                 # This special extra edition
+├── pressing/
+│   ├── __init__.py
+│   └── press.py                 # Bohemian Archive broadsheet layout & print engine
+├── scrapping/
+│   ├── __init__.py
+│   └── scraper.py               # Automated Touhou Wiki lore & character harvester
+├── data/
+│   └── gensokyo_directory.json  # Comprehensive 182-character dossier & commercial sponsors
+├── assets/
+│   ├── blahaj.jpg               # Exhibit A: The Blue Horror of Gensokyo
+│   └── bunbunmaru_newspaper.png # Rendered sample broadsheet clipping
+├── bunbunmaru.py                # Hot-wire reporting pipeline script
+├── Modelfile                    # The sacred editorial decrees of Aya Shameimaru
+├── README.md                    # This special extra edition
+└── .gitignore
 ```
 
 ---

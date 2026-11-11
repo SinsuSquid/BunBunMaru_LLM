@@ -8,10 +8,13 @@ import sys
 import os
 import json
 import ollama
-from press import render_newspaper
+from pressing import render_newspaper
 
 def main():
-    image_path = "blahaj.jpg"
+    image_path = "assets/blahaj.jpg"
+    if not os.path.exists(image_path) and os.path.exists("blahaj.jpg"):
+        image_path = "blahaj.jpg"
+
     if len(sys.argv) > 1:
         if os.path.exists(sys.argv[1]):
             image_path = sys.argv[1]
@@ -24,7 +27,9 @@ def main():
 
     # Load Gensokyo Directory Dossier if present
     prompt_content = "Break this story right now!"
-    dir_path = "gensokyo_directory.json"
+    dir_path = "data/gensokyo_directory.json"
+    if not os.path.exists(dir_path) and os.path.exists("gensokyo_directory.json"):
+        dir_path = "gensokyo_directory.json"
     if os.path.exists(dir_path):
         try:
             import random

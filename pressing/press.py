@@ -577,7 +577,7 @@ def render_newspaper(
     json_data: dict,
     image_path: str,
     output_html_path: str = "bunbunmaru_newspaper.html",
-    output_png_path: str = "bunbunmaru_newspaper.png",
+    output_png_path: str = "assets/bunbunmaru_newspaper.png",
     export_images: bool = True
 ):
     """Render structured story JSON + image into authentic Bunbunmaru newspaper in English."""
@@ -722,7 +722,9 @@ if __name__ == "__main__":
         ]
     }
 
-    image_path = "blahaj.jpg"
+    image_path = "assets/blahaj.jpg"
+    if not os.path.exists(image_path) and os.path.exists("blahaj.jpg"):
+        image_path = "blahaj.jpg"
     if len(sys.argv) > 1 and os.path.exists(sys.argv[1]):
         image_path = sys.argv[1]
 

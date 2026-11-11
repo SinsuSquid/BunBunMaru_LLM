@@ -213,7 +213,10 @@ def get_canonical_advertisers() -> list:
     ]
 
 def main():
-    output_file = "gensokyo_directory.json"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_dir = os.path.join(base_dir, "data")
+    os.makedirs(data_dir, exist_ok=True)
+    output_file = os.path.join(data_dir, "gensokyo_directory.json")
     characters = scrape_all_characters(max_workers=10, limit=200)
     advertisers = get_canonical_advertisers()
 
