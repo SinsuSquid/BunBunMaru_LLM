@@ -27,14 +27,40 @@ def main():
     dir_path = "gensokyo_directory.json"
     if os.path.exists(dir_path):
         try:
+            import random
             with open(dir_path, "r", encoding="utf-8") as f:
                 dossier = json.load(f)
+            all_chars = dossier.get("interviewees", [])
+            sponsors = dossier.get("advertisers", [])
+
+            # Core iconic cast + diverse random rotation
+            key_names = {
+                "Reimu Hakurei", "Marisa Kirisame", "Cirno", "Sakuya Izayoi",
+                "Remilia Scarlet", "Flandre Scarlet", "Nitori Kawashiro", "Sanae Kochiya",
+                "Rinnosuke Morichika", "Yuyuko Saigyouji", "Youmu Konpaku", "Reisen Udongein Inaba"
+            }
+            featured = [c for c in all_chars if c["name"] in key_names]
+            remaining = [c for c in all_chars if c["name"] not in key_names]
+            if remaining:
+                featured.extend(random.sample(remaining, min(8, len(remaining))))
+
+            compact_dossier = {
+                "featured_residents_for_interview": [
+                    {
+                        "name": c["name"],
+                        "role": c.get("role", "Resident"),
+                        "attitude_towards_aya": c.get("attitude_towards_aya", "Irritated by prying")
+                    }
+                    for c in featured
+                ],
+                "commercial_sponsors_for_ads": sponsors
+            }
             prompt_content += (
-                "\n\n[MANDATORY GENSOKYO DOSSIER]\n"
-                "Ground your eyewitnesses and classified ads using this directory of characters and sponsors:\n"
-                + json.dumps(dossier, ensure_ascii=False)
+                "\n\n[GENSOKYO DOSSIER]\n"
+                "Ground your eyewitness quotes in the personalities above, and generate 3 classified ads for sponsors:\n"
+                + json.dumps(compact_dossier, ensure_ascii=False)
             )
-            print("📖 Loaded Gensokyo personnel & sponsor directory.")
+            print(f"📖 Loaded Gensokyo directory ({len(all_chars)} characters, {len(sponsors)} sponsors).")
         except Exception as e:
             print(f"⚠️ Could not load directory: {e}")
 

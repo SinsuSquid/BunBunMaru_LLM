@@ -158,7 +158,8 @@ BunBunMaru_LLM/
 ├── Modelfile                 # The sacred editorial decrees of Aya Shameimaru
 ├── bunbunmaru.py             # Hot-wire reporting pipeline script
 ├── press.py                  # Bohemian Archive broadsheet layout & print engine
-├── gensokyo_directory.json   # Lore dossier for character personalities & sponsors
+├── scraper.py                # Automated Touhou Wiki lore & character harvester
+├── gensokyo_directory.json   # Comprehensive 182-character dossier & commercial sponsors
 ├── blahaj.jpg                # Exhibit A: The Blue Horror of Gensokyo
 ├── bunbunmaru_newspaper.png  # Rendered sample broadsheet clipping
 └── README.md                 # This special extra edition

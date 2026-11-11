@@ -1,89 +1,1285 @@
 {
-  "_comment": "Gensokyo Directory & Personality Dossier for the Bunbunmaru Newspaper (文々。新聞). The model consults this dossier to ground eyewitness quotes and commercial classifieds in canonical Touhou lore.",
+  "_meta": {
+    "source": "https://touhou.fandom.com/wiki/Touhou_Wiki",
+    "harvested_at": "2026-11-11T14:24:09.703318",
+    "character_count": 182,
+    "sponsor_count": 8,
+    "description": "Comprehensive Gensokyo Directory harvested from Touhou Wiki for Bunbunmaru Newspaper LLM grounding."
+  },
   "interviewees": [
     {
-      "name": "Reimu Hakurei (博麗 霊夢)",
-      "role": "Hakurei Shrine Maiden / Incident Resolver",
-      "personality": "Lazy, perpetually broke, easily irritated, deeply suspicious of reporters. Values tea, naps, and donations above all else.",
-      "attitude_towards_aya": "Extremely hostile. Constantly threatens to seal or exterminate Aya for shoving cameras in her face without dropping 500 yen in the offering box.",
-      "speech_style": "Blunt, cynical, uncooperative, demanding money for interviews."
+      "name": "Alice Margatroid",
+      "role": "Magician (Was formerly or tempoarly human, but species changed due to training and high dexterity but currently being acting as a Human) / Magician of the Dolls",
+      "abilities": "Magic, Puppetry proficiency",
+      "personality": "In Immaterial and Missing Power the vast majority of her attacks involved dolls in one way or another, either attacking for her or being used as explosives. She is a doll specialist, but dolls are more like a hobby in comparison to her full power. Alice is always seen with a locked grimoire in her h...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Marisa Kirisame (霧雨 魔理沙)",
-      "role": "Ordinary Magician of the Forest of Magic",
-      "personality": "Enthusiastic, bold, kleptomaniac (she 'borrows until she dies'), loves high-powered explosions and lasers.",
-      "attitude_towards_aya": "Playful but guarded. Always brags about discovering things first and asks if Aya caught her good side.",
-      "speech_style": "Energetic tomboy, ends sentences with casual confidence, brags about Master Spark."
+      "name": "Ariya Iwanaga",
+      "role": "Stone goddess / Asama Purifying Mountain",
+      "abilities": "Causing one to give up on change",
+      "personality": "Category:CharactersCategory:FemalesCategory:Stage 6 BossesCategory:Fossilized Wonders",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
     },
     {
-      "name": "Cirno (チルノ)",
-      "role": "Ice Fairy of the Misty Lake / Self-Proclaimed Strongest (⑨)",
-      "personality": "Childish, boastful, completely gullible, has zero reading comprehension, claims she is the absolute strongest being in Gensokyo.",
-      "attitude_towards_aya": "Tries to show off, misunderstands Aya's complex vocabulary, insists she can freeze whatever incident is happening.",
-      "speech_style": "Boastful, loud, simple-minded, claims everything is easy for the strongest."
+      "name": "Aunn Komano",
+      "role": "Komainu / Hakurei Shrine",
+      "abilities": "Locating Shintoism and Buddhism",
+      "personality": "Aunn Komano (高麗野 あうん Komano Aunn) is a komainu who guards places of religious worship.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Sanae Kochiya (東風谷 早苗)",
-      "role": "Moriya Shrine Wind Priestess / Outside World Transplant",
-      "personality": "Optimistic, earnest, slightly unhinged in her quest to gather faith. Still references Outside World mecha anime and pop culture.",
-      "attitude_towards_aya": "Friendly and eager for PR coverage to promote the Moriya Shrine, but gets overly preachy about miracles.",
-      "speech_style": "Polite modern schoolgirl cadence, blends shrine priestess duties with geeky sci-fi references."
+      "name": "Aya Shameimaru",
+      "role": "Crow Tengu / Newspaper writer, reporter, photographer.",
+      "abilities": "Able to see/hear things from great distance, Manipulation of Wind",
+      "personality": "Aya Shameimaru (射命丸文 Shameimaru Aya) is Gensokyo's resident reporter, known for writing \"slightly\" exaggerated news articles about anything that happens in Gensokyo. She's very strong and is probably stronger than she shows since she sometimes \"accidentally wins\" battles while only meaning to cover ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Nitori Kawashiro (河城 にとり)",
-      "role": "Kappa Heavy Industries Engineer & Business Head",
-      "personality": "Pragmatic, secretive, tech-obsessed engineer who loves cucumbers, optical camouflage, and money. Explains anomalies with absurd pseudoscientific kappa mechanics.",
-      "attitude_towards_aya": "Transactional. Won't speak without being paid or granted free advertising space. Denies all rumors of design defects.",
-      "speech_style": "Fast-talking technical jargon, salesman-like, defensive about explosions."
+      "name": "Benben Tsukumo",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Benben Tsukumo|species=Tsukumogami (Biwa boku boku)|abilities=Making sounds and performing on her own; Music-based danmaku (guitar)|age=Unknown but appears to be New|occupation=Performing Music|location=Skies of Gensokyo (Heaven(?))|titles=Tsukumogami of an Aging Biwa (TH14)|description=*(Touhou 14)...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Sakuya Izayoi (十六夜 咲夜)",
-      "role": "Head Maid of the Scarlet Devil Mansion",
-      "personality": "Impeccably elegant, composed, time-manipulating perfectionist. Coldly ruthless against anyone who disturbs Lady Remilia.",
-      "attitude_towards_aya": "Icy and formal. Answers while subtly polishing silver throwing knives to remind Aya she can stop time at any moment.",
-      "speech_style": "Aristocratic butler cadence, polite threats, utterly devoted to Remilia."
+      "name": "Byakuren Hijiri",
+      "role": "Magician (formerly Human) / Monk",
+      "abilities": "Ability to use magic (specializes in magic that increases her physical abilities)",
+      "personality": "Byakuren Hijiri is a notable character introduced in Undefined Fantastic Object as the final opponent. When encountered she mentions being a human and having worked with her younger brother (Myouren Hijiri) as a monk. She manages a temple of pagan youkai monks and encourages youkai tolerance and rep...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Remilia Scarlet (レミリア・スカーレット)",
-      "role": "Vampire Mistress of the Scarlet Devil Mansion",
-      "personality": "Charismatically arrogant, theatrical, secretly childish, claims to manipulate fate and that everything is part of her grand crimson design.",
-      "attitude_towards_aya": "Smug and amused. Treats the interview like an imperial audience, demanding dramatic prose in the morning edition.",
-      "speech_style": "Haughty, theatrical, dramatic noble vampire cadence."
+      "name": "Chen",
+      "role": "Nekomata / Ran's shikigami",
+      "abilities": "Black Magical Arts",
+      "personality": "Chen is Ran's shikigami, who was guarding the village of Mayohiga during the events of Perfect Cherry Blossom. Unfortunately, she could put up little resistance due to being far away from her master.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Flandre Scarlet (フランドール・スカーレット)",
-      "role": "Diabolical Vampire Princess in the Basement",
-      "personality": "Unstable, cheerfully terrifying, incredibly destructive. Has the power to destroy anything by clenching her fist.",
-      "attitude_towards_aya": "Innocently creepy. Asks Aya if she can squeeze the reporter's camera until it goes 'boom'.",
-      "speech_style": "Playful child-like voice laced with catastrophic destructive intent."
+      "name": "Chimata Tenkyuu",
+      "role": "God",
+      "abilities": "Capable of letting one relinquish ownership",
+      "personality": "Chimata Tenkyuu (天弓 千亦 Tenkyuu Chimata) is the Stage 6 boss of Unconnected Marketers. She is responsible for the mysterious cards that were surrounding Gensokyo, together with Megumu Iizunamaru, in an attempt to gain faith and power. As a marketplace god, she is very concerned with the rules of a fa...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
     },
     {
-      "name": "Rinnosuke Morichika (森近 霖之助)",
-      "role": "Proprietor of the Kourindou Curiosity Shop",
-      "personality": "Pedantic, intellectual hoarder, philosophical. Has the power to know the name and purpose of Outside World items, but zero idea how to actually operate them.",
-      "attitude_towards_aya": "Long-winded lecture mode. Gives absurd, overly complex theories that are 100% wrong.",
-      "speech_style": "Verbose, scholarly, self-important, pauses thoughtfully."
+      "name": "Chimi Houjuu",
+      "role": "[https://yokai.com/chimi/ Chimi] / Youkai Mountain",
+      "abilities": "Manipulating the qi of mountains and rivers",
+      "personality": "Chimi Houjuu (封獣 チミ Houjuu Chimi) is a chimi who lives on Youkai Mountain. She appeared as the Stage 2 midboss and boss in Fossilized Wonders.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Reisen Udongein Inaba (鈴仙・優曇華院・イナバ)",
-      "role": "Moon Rabbit & Eientei Pharmacy Dispenser",
-      "personality": "Neurotic, stressed, overworked, easily bullied by Eirin and Tewi. Desperately tries to prevent pharmaceutical scandals.",
-      "attitude_towards_aya": "Paranoid. Thinks Aya is conducting an FDA-style inspection into Eientei's unverified drugs.",
-      "speech_style": "Anxious, apologetic, trying to hide suspicious medicine bottles."
+      "name": "Chiyari Tenkajin",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Chiyari was a former resident of Former Hell that lived off of sucking other creatures' blood. Eventually, she found the Blood Pools of Former Hell which was paradise for a blood sucker like her. Eventually, Zanmu reached out to her for help. Leading to the events of Unfinished Dream of All Living G...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Youmu Konpaku (魂魄 妖夢)",
-      "role": "Half-Phantom Gardener & Swordswoman of Hakugyokurou",
-      "personality": "Earnest, easily startled, terrified of ghost stories despite being half-phantom. Extremely loyal to Lady Yuyuko.",
-      "attitude_towards_aya": "Tense and formal. Threatens to cut Aya's questions in half with Roukanken if she suspects disrespect.",
-      "speech_style": "Disciplined samurai apprentice, nervous under pressure."
+      "name": "Chiyuri Kitashirakawa",
+      "role": "Human / Assistant professor, Scientist (Assistant)",
+      "abilities": "Artificial Magic",
+      "personality": "During the events of Phantasmagoria of Dim.Dream, Chiyuri Kitashirakawa (北白河 ちゆり Kitashirakawa Chiyuri) wrote a flier with false information on it, promising a fantastic prize to whoever entered the \"ruins\", which later turned out to be a ship. After pitting the various heroines against each other s...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
     },
     {
-      "name": "Yuyuko Saigyouji (西行寺 幽々子)",
-      "role": "Ghost Mistress of the Netherworld",
-      "personality": "Whimsical, carefree, enigmatic, and endlessly hungry. Her mind always drifts toward snacks and dining.",
-      "attitude_towards_aya": "Teasing. Completely ignores the incident and asks Aya if the object in the photo can be boiled or grilled.",
-      "speech_style": "Dreamy, poetic, playful, food-obsessed."
+      "name": "Cirno",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "In Perfect Cherry Blossom, she returned as the midboss of stage 1, presumably to challenge the player character again to prove her strength.",
+      "attitude_towards_aya": "Boastful and confused. Claims she is the strongest (⑨) and threatens to freeze the camera."
+    },
+    {
+      "name": "Clownpiece",
+      "role": "Fairy / Loyal Servant to the Goddess Hecatia",
+      "abilities": "Able to drive someone to madness",
+      "personality": "Clownpiece is the stage 5 boss of Touhou 15, Legacy of Lunatic Kingdom. Clownpiece is an exceptionally powerful fairy who is the subordinate of Hecatia Lapislazuli.",
+      "attitude_towards_aya": "Easily startled or prone to childish pranks, complaining about being disturbed."
+    },
+    {
+      "name": "Daiyousei",
+      "role": "Fairy",
+      "abilities": "Teleportation (\"swimming through the mist\", as ZUN says)",
+      "personality": "Daiyousei (大妖精 Daiyōsei) is a greater fairy who lives by the lake around the Scarlet Devil Mansion. Like other fairies, she is cheerful and mischievous, simple and emotional. She first appears in Embodiment of Scarlet Devil as the Stage 2 midboss.",
+      "attitude_towards_aya": "Easily startled or prone to childish pranks, complaining about being disturbed."
+    },
+    {
+      "name": "Doremy Sweet",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Doremy Sweet is a baku that is the Dream World Guardian. As the ruler of the Dream World, she has complete control over dreams, as she can create, enter, stop, remove, and even eat them. She appears as the Stage 3 Boss and Midboss in the Extra Stage in Legacy of Lunatic Kingdom, and as a playable ch...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Eika Ebisu",
+      "role": "Soul of a stillborn child",
+      "abilities": "Stacking stones well",
+      "personality": "Eika Ebisu is the first stage midboss and boss of Touhou 17, Wily Beast and Weakest Creature. She resides Sai no Kawara, the riverbank of the Sanzu River. Category:Females Category:Characters Category:Gods Category:Stage 1 Bosses",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Eiki Shiki, Yamaxanadu",
+      "role": "Yama / Judge of the Dead",
+      "abilities": "Can distinctly judge anything to be Good or Evil",
+      "personality": "Eiki Shiki, Yamaxanadu is one of the Yama who judge the dead to decide whether they go to Heaven, Hell, Hakugyokurou, or are reincarnated. Whether it's because she simply has a habit of lecturing or because she genuinely wants others to change for the better (though the latter is implied), she's bec...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Eirin Yagokoro",
+      "role": "Lunarian / Pharmacist",
+      "abilities": "Can create all types of medicine, genius-level intelligence.",
+      "personality": "It seems that now Eirin has begun using her knowledge of medicine to act as Gensokyo's premier pharmacist, selling medicines at Eientei ranging from sleep aids to various cures. She is generally a fairly pleasant person and is devoted to serving her best friend, Kaguya, but she does not suffer fools...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Elis",
+      "role": "Magician/Devil (?)",
+      "abilities": "Can turn into a bat",
+      "personality": "Elis is a devil of some kind that Reimu Hakurei encounters while in the Ruins of Vina, in Makai. However, since she has no profile and exchanges no dialogue with Reimu, nothing else is known about this enemy.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Ellen",
+      "role": "Witch / Witch",
+      "abilities": "Inability to grow old, magic",
+      "personality": "Ellen (エレン Eren) is an eternally young witch who makes her appearance during Phantasmagoria of Dim.Dream. She lives longer than the average human (it's possible that she is immortal), but most memories of her life completely leave her mind in blocks at a time, making her as childish as she looks. It...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Elly",
+      "role": "Unknown, probably Demon or Ankou / Mansion Porter",
+      "abilities": "Probably Electrogenesis",
+      "personality": "Elly (エリー Erī) is the gatekeeper of Yuuka's mansion, which is a border between the dream world and the real world. It's so rare that people come there that she is rather surprised when both Reimu and Marisa show up one after another, and fails miserably to stop both of them from entering. She blames...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Enoko Mitsugashira",
+      "role": "Immortal yamainu / Gensokyo Resident",
+      "abilities": "Manipulating traps",
+      "personality": "Enoko Mitsugashira (三頭 慧ノ子 Mitsugashira Enoko) is a character who debuts in Unfinished Dream of All Living Ghost. Category:Characters Category:Females Category:Penultimate Bosses",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Eternity Larva",
+      "role": "Butterfly",
+      "abilities": "Scattering scales",
+      "personality": "Eternity Larva is the first stage boss in Touhou 16, Hidden Star in Four Seasons. During the events of that game, she, along with the rest of the fairies, went berserk and was overflowing with power, until she is defeated by the heroine.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Flandre Scarlet",
+      "role": "Vampire",
+      "abilities": "Destroying absolutely anything",
+      "personality": "Flandre Scarlet (フランドール・スカーレット Furandooru Sukaaretto) is the younger sister of Remilia Scarlet and a vampire who has lived at the Scarlet Devil Mansion for over 495 years.",
+      "attitude_towards_aya": "Cheerfully terrifying. Asks if she can squeeze Aya's camera until it goes 'boom'."
+    },
+    {
+      "name": "Fujiwara no Mokou",
+      "role": "Human / Rescues lost people, Bamboo forest guide, Claims to run a yakitori stand",
+      "abilities": "Eternal Youth and Immortality, Resistance, Manipulation of Fire",
+      "personality": "Due to her longevity, Mokou has garnered much experience and is able to endure a high threshold of pain. She is arguably the strongest human in Gensokyo, and her abilities are said to be on par with some of Gensokyo's most elite youkai.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Gengetsu",
+      "role": "Demon",
+      "abilities": "",
+      "personality": "Gengetsu (幻月) is a demon. After the final events of Lotus Land Story the heroine stumbles upon another strange world which Gengetsu's younger twin sister Mugetsu claims to be her world. Once Mugetsu is defeated Gengetsu comes to her aid, even while admitting she doesn't even know why the heroine is ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Genjii",
+      "role": "Turtle/Youkai / Reimu's pet",
+      "abilities": "Able to fly in the sky",
+      "personality": "Genjii (玄爺) is a turtle capable of flight. Originally, before Reimu learned to fly for herself via weightlessness, she used Genjii's help. During Story of Eastern Wonderland, Reimu calls him \"Gramps\" and other such things mocking his age. Even though he is clearly older than Reimu, she still treats ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Goliath Doll",
+      "role": "Giant Doll / Alice's Doll",
+      "abilities": "Mystical Spell Cards",
+      "personality": "The Goliath Doll (ゴリアテ人形, Goriate ningyō) is a giant doll used in Alice's Last Spell Card during Story Mode of Cirno. It seems it's the most powerful Doll in Alice's Army.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Hata no Kokoro",
+      "role": "Menreiki",
+      "abilities": "Ability to manipulate emotion",
+      "personality": "Hata no Kokoro (秦 こころ) is a Menreiki youkai. She appears in Hopeless Masquerade as the Final Stage Boss. She considers Koishi her enemy due to the fact that during Hopeless Masquerade, Koishi stole her mask of hope, and refused to return it.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Hatate Himekaidou",
+      "role": "Crow Tengu / Reporter",
+      "abilities": "Spirit Photography",
+      "personality": "Hatate Himekaidou (姫海棠 はたて Himekaidou Hatate) is a tengu reporter who makes a newspaper called \"Kakashi Spirit News\". Unlike Aya, she never goes outside for her newspaper research. Instead, she uses her ability called spirit photography. After reading Aya's Bunbunmaru Newspaper, she decided to obser...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Hecatia Lapislazuli",
+      "role": "Goddess / Ruler of every hell",
+      "abilities": "Able to have 3 Bodies",
+      "personality": "Hecatia Lapislazuli is the extra stage boss of Touhou 15, Legacy of Lunatic Kingdom.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Hieda no Akyu",
+      "role": "Human / Chronicler",
+      "abilities": "Not forgetting things seen once",
+      "personality": "Hieda is the ninth in a long chain of reincarnations of the \"Child of Miare\". Because of this, her memory goes back over 1200 years despite her young age. Historically, the role of the Children of Miare has been to collect and compile information on the various youkai and youkai hunters living in Ge...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Hina Kagiyama",
+      "role": "Curse Goddess / Chasing away lost humans, Gathering the misfortune of humans",
+      "abilities": "The ability to store up curses",
+      "personality": "Hina Kagiyama is the leader of the Nagashi-bina doll army whose job is to scare off lost Humans who get too near to the Youkai Mountain as well as gathering their misfortune. When Hina sees the heroine nearing Youkai Mountain during Mountain of Faith she attempts to scare her off. This isn't because...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Hisami Yomotsu",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Hisami is a subordinate to Zanmu Nippaku. She follows her to her every whim and strives to please her in any way. She is tasked to drag people into hell.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Hong Meiling",
+      "role": "Youkai / Gatekeeper and Gardener of the Scarlet Devil Mansion",
+      "abilities": "Usage of Qi",
+      "personality": "In Immaterial and Missing Power, she actually has no proper backstory and is only playable in arcade.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Hourai",
+      "role": "Doll / A Doll used in one of Alice's Spell Cards",
+      "abilities": "Destructive Magic, more powerful than Shanghai",
+      "personality": "Hourai is one of Alice Margatroid's dolls. She's theoretically more powerful than Shanghai due to Shanghai being used by Alice while playing on the hard difficulty setting of Perfect Cherry Blossom and Hourai being used while playing on lunatic. Hourai appears in Alice's spell card Curse \"Hanged Hou...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Ichirin Kumoi",
+      "role": "Youkai (Wanyuudou or [http://ja.wikipedia.org/wiki/片輪車 Katawaguruma] ?) / Guardian of the Palanquin Ship",
+      "abilities": "Power to use nyuudou",
+      "personality": "Ichirin Kumoi is the midboss and boss of Undefined Fantastic Object's Stage 3. Her personality is described as straightforward and quick-thinking, allowing her to adapt to most situations with ease.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Iku Nagae",
+      "role": "Oarfish Youkai / Envoy of the Dragon Palace",
+      "abilities": "Able to read/control the atmosphere.",
+      "personality": "Iku Nagae is a messenger of the Dragon Palace, whose job is to observe the daily mood of the atmosphere. She somewhat questions why humans and youkai fight/duel as a part of their daily life. During the events of Scarlet Weather Rhapsody she is told by her master of impending calamities in the Scarl...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Jacketko",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Joon Yorigami",
+      "role": "Pestilence God",
+      "abilities": "Causing consumption of financial assets",
+      "personality": "Joon Yorigami (依神 女苑 Yorigami Joon) is one of the final bosses in Touhou 15.5, Antinomy of Common Flowers. She is the true culprit behind the Perfect Possession incident alongside her fraternal older twin sister, Shion Yorigami.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Junko",
+      "role": "Divine Spirit (God) / Nemesis of the lunarians",
+      "abilities": "Able to Purify Anything",
+      "personality": "Junko is the final boss of Touhou 15, [http://touhou.wikia.com/wiki/Legacy_of_Lunatic_Kingdom Legacy of Lunatic Kingdom].",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Kagerou Imaizumi",
+      "role": "Werewolf",
+      "abilities": "Ability to transform into a wolf on the night of a full moon",
+      "personality": "Kagerou Imaizumi is a werewolf, who lives in the Bamboo Forest of the Lost. She appears in Double Dealing Character as the Stage 3 Midboss and Boss. She apparently does not like going out during a full moon, since she gets hairy. She also knows Wakasagihime because she nearly ate her at some point. ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kaguya Houraisan",
+      "role": "Lunarian / Unknown, currently in hiding. Formerly a moon princess.",
+      "abilities": "Manipulation of eternity and the moment",
+      "personality": "Kaguya Houraisan was once a princess of the Lunarians, a race of people living on the Moon. She was exiled to Earth over a thousand years ago for the crime of using the forbidden Hourai Elixir to make herself immortal. Arriving on Earth one day, she was found by a bamboo cutter and dwelt among the h...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kana Anaberal",
+      "role": "Poltergeist",
+      "abilities": "",
+      "personality": "Kana Anaberal (カナ・アナベラル Kana anaberaru) is a poltergeist that was produced by a mentally unstable girl. She has been haunting a certain mansion for a very long time now; with the people who live there no longer scared of her, she wanders over to the Probability Space Hypervessel during Phantasmagori...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kanako Yasaka",
+      "role": "Goddess of Wind and Rain (not native to Gensokyo) / Moriya Shrine's Goddess, Scientist (Amateur)",
+      "abilities": "The ability to create Sky; able to summon Onbashira",
+      "personality": "Kanako Yasaka is the final boss on Mountain of Faith. She is Moriya Shrine's official goddess because she defeated Suwako Moriya in the Great Suwa War. Even though she was victorious, she still let Suwako hang around the shrine because she considered her a \"fellow\" goddess.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Kasen Ibaraki",
+      "role": "Oni/Hermit",
+      "abilities": "Guiding animals",
+      "personality": "Kasen is also a Sage of Gensokyo and, as of Wild and Horned Hermit Chapter 49 Part 2, is confirmed to be an oni and one of the Big Four of the Mountain.",
+      "attitude_towards_aya": "Arrogantly amused. Treats the interview like an imperial audience while mocking Tengu rumors."
+    },
+    {
+      "name": "Keiki Haniyasushin",
+      "role": "God / protecter god of the primate spirit garden",
+      "abilities": "Ability to create idols",
+      "personality": "Many Haniyasu shrines are located in the Fukuoka prefecture, which is also known for its unique, elaborately decorated burial mounds ({{lang|ja|装飾古墳}}). Some of the painted decorations found in them resemble the patterns on the edge of Keiki's dress and sleeves.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Keine Kamishirasawa",
+      "role": "Half human Half hakutaku / School history teacher; acts as guardian of the human village",
+      "abilities": "In human form, can consume (hide) history.",
+      "personality": "During Imperishable Night, Keine Kamishirasawa, being sensitive to the moon herself, sensed the strange events that were occurring. As a safeguard, she hid the village's history, making it as if there had never been a village there to begin with, so that the inhabitants would be protected from any y...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kikuri",
+      "role": "Gensokyo Resident",
+      "abilities": "",
+      "personality": "Kikuri is a large, bronze disc that Reimu Hakurei encounters while in Hell. But since she has no profile and exchanges no dialogue with Reimu, nothing else is known about this enemy. ==Character Basis==",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kisume",
+      "role": "Tsurube-otoshi",
+      "abilities": "Power to fling down demon fire",
+      "personality": "Kisume is a rather shy youkai who usually spends her time in buckets. As a midboss with no dialogue and a rather sparse official profile, little is known about her, but she seems rather childish. She is often seen in dark places such as caves or wells.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Koakuma",
+      "role": "Devil (Succubus) / Rumored to be Patchouli's Library Assistant",
+      "abilities": "Capable of finding a needed book in a instant",
+      "personality": "Very little is known about Koakuma, and unless she makes another appearance she may remain a mystery. What is known is that she's seen around the library of Scarlet Devil Mansion during the events of Embodiment of Scarlet Devil. Apparently she lives in the mansion. Her exact role is difficult to tel...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kogasa Tatara",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Kogasa Tatara (多々良 小傘 Tatara Kogasa) is a karakasa obake who is always trying to surprise people but usually isn't very successful. She was once a normal umbrella in the outside world that was forgotten by her owner that no one claimed over time because the color of it was unpopular at the time. As ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Koishi Komeiji",
+      "role": "Satori / Unknown, it is said that she is wandering aimlessly",
+      "abilities": "Manipulation of the Subconscious",
+      "personality": "Koishi Komeiji is Satori Komeiji's younger sister. She wanted to avoid the hate and dislike which Satori experienced due to their mindreading abilities, so she sealed away her own Third Eye. This backfired, since she gained the ability to read and manipulate people's subconscious, an even greater ab...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Komachi Onozuka",
+      "role": "Shinigami / Carries Dead Spirits to the Yama",
+      "abilities": "Manipulation of Distance, Manipulation of Souls (as the Guide of the Sanzu River)",
+      "personality": "Komachi Onozuka is widely known in Gensokyo as being a slacker shinigami. Her pace of working is slow and when the \"flower incident\" hit (every 60 years, a great many spirits are 'produced' in the outer world that migrate here), she didn't feel any urgency and kept going at her own pace or outright ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kosuzu Motoori",
+      "role": "Human / Scholar",
+      "abilities": "The ability to decipher books by only touching them",
+      "personality": "Kosuzu Motoori (本居 小鈴 Motoori Kosuzu) is the human daughter of Suzunaan, a book renter residing in the Human Village, and the main character of Forbidden Scrollery. She is the best friend of Hieda no Akyu. Category:Characters Category:Article stubs Category:Females",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kotohime",
+      "role": "Human / Princess, Police Officer",
+      "abilities": "",
+      "personality": "Kotohime (小兎姫) is supposed to be a princess, but has an odd personality. Everyone who meets her thinks there's something slightly weird about her, even if those people are strange themselves. She also calls herself a police officer. A collector of things only she thinks are interesting. Category:Cha...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Kurumi",
+      "role": "Vampire / Lake Guardian",
+      "abilities": "",
+      "personality": "During Lotus Land Story, Kurumi attempts to prevent the heroine from reaching the island in the mountain lake, but fails twice as a midboss and a stage boss. It's unknown why she guards that lake. Category:Characters Category:Characters Category:Females Category:Stage 2 Bosses",
+      "attitude_towards_aya": "Arrogantly amused. Treats the interview like an imperial audience while mocking Tengu rumors."
+    },
+    {
+      "name": "Kutaka Niwatari",
+      "role": "God of chickens",
+      "abilities": "Healing throat illnesses",
+      "personality": "Kutaka Niwatari is the third stage midboss and boss of Touhou 17, Wily Beast and Weakest Creature. She was told to test the heroines by the Yama to see if they were strong enough to enter hell. She is also the one that warns the heroines of the beast spirit that they are utilizing. Category:Females ...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Kyouko Kasodani",
+      "role": "Yamabiko / Reciting Buddhist Sutras from Mountains. Cleaning the entrance of Myouren Temple. Vocalist in Choujuu Gigaku.",
+      "abilities": "Manipulation of Sound Waves",
+      "personality": "During Ten Desires, Kyouko Kasodani is sweeping the path of the Myouren Temple when set upon by the heroine. Even though she isn't responsible for the current situation, she ends up fighting the heroine anyway and in the end they are redirected to the graveyard where the spirits seem to be heading.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Labelko",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Layla Prismriver",
+      "role": "Human",
+      "abilities": "Unknown, but mentioned she can conjure poltergeists.",
+      "personality": "Layla Prismriver is the fourth daughter of the Prismriver family. When the family was orphaned, she didn't want to leave the mansion that held so much of her memories, so she made poltergeists that looked like her sisters and then vanished along with the mansion. Category:Characters Category:Females...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Letty Whiterock",
+      "role": "Yuki-onna",
+      "abilities": "Manipulation of cold weather",
+      "personality": "Letty Whiterock is a seasonal youkai who's only seen during winter. Although she attacks the heroine early during Perfect Cherry Blossom, she's half-hearted about it, so her true power isn't seen. She seems fittingly cold towards most of the humans she meets, and many humans fear her abilities.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Lily White",
+      "role": "Fairy / Herald of spring",
+      "abilities": "Reports the spring's approach, brings spring to the area around her",
+      "personality": "Lily White is a fairy that heralds the coming of spring. However, this is unknown to both the player and the characters when she appears unexpectedly in the middle of stage 4 in Perfect Cherry Blossom to shower them with danmaku, bothering neither with words of dialogue nor even a Spell Card.",
+      "attitude_towards_aya": "Easily startled or prone to childish pranks, complaining about being disturbed."
+    },
+    {
+      "name": "Louise",
+      "role": "Demon",
+      "abilities": "",
+      "personality": "Louise (ルイズ Ruizu) was one of the many demons coming out of Makai into Gensokyo during Mystic Square. Although she denied it at first, she really did want to go to the human world. However, she had the bad luck of running into the heroine inside the border space between Gensokyo and Makai before mak...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mai",
+      "role": "Witch / White Witch",
+      "abilities": "Ice Magic",
+      "personality": "When the heroine traveled into Makai during the events of Mystic Square, Mai was waiting for her arrival. Along with her partner Yuki she attempted to prevent the heroine from going any further in a two on one battle, but ultimately failed. Mai is the more quiet of the two, but seems to think she's ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mai Teireida",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Emerging alongside their master, Okina, she orders her servants to find others worthy of serving her. To do so, they plant doors on the backs of others and empower them, to bring out their best and test them. What they don't know, however, is that they aren't searching for allies, like Okina told th...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mamizou Futatsuiwa",
+      "role": "Bake-danuki / To become a strong ally in the youkai forces",
+      "abilities": "The power to disguise herself and objects by shape-shifting",
+      "personality": "Mamizou Futatsuiwa (二ッ岩 マミゾウ Futatsuiwa Mamizou) is a Bake-danuki, summoned by Nue Houjuu, who originally lived in Sado in the Outside World in order to act as the Myouren Temple's trump card against the newly-arrived residents of the Hall of Dreams' Great Mausoleum, particularly Toyosatomimi no Mik...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Maribel Hearn",
+      "role": "Human / University Student (Relative Psychology major)",
+      "abilities": "Ability to \"sense\" every boundary Ability to manipulate boundaries (speculated by Renko Usami)",
+      "personality": "Maribel Hearn (マエリベリー・ハーン Mæriberii Haan) is a university student in the outside world. She is a major in relative psychology and sometimes has difficulty telling the difference between dream and reality (at least, in regards to Gensokyo and other worlds of that nature). She believes subjectivity to...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Marisa Kirisame",
+      "role": "Human / Magician, Kirisame Magic Shop owner, burglar, part-time youkai hunter",
+      "abilities": "High-level Magic",
+      "personality": "Marisa Kirisame (霧雨 魔理沙 Kirisame Marisa) is a human magician, and is one of the most important sub-characters of the series (according to series producer ZUN). Her personality is sometimes described as disagreeable, but in some other titles, straightforward. Either way, she is a very self-confident ...",
+      "attitude_towards_aya": "Playfully guarded. Brags about solving the incident first and asks if Aya caught her good side."
+    },
+    {
+      "name": "Mayumi Joutouguu",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Medicine Melancholy",
+      "role": "Youkai (formerly a doll, potentially might be a Tsukumogami)",
+      "abilities": "Manipulation of Poison",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Megumu Iizunamaru",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "She is a chief tengu of Youkai Mountain. She is also the inventor of the ability cards, and made a profit with the gems she dug up from Rainbow Dragon Cave. She betrayed Chimata Tenkyuu when she allows the heroine to defeat her.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Meira",
+      "role": "Human / Samurai",
+      "abilities": "",
+      "personality": "Meira (明羅) is a mysterious woman that attacked Reimu one night. She wanted the power of the Hakurei, a power which Reimu has inherited. Meira thought that by defeating Reimu the power would be hers, but she failed and ran off, and has never been seen since. Category:Story of Eastern Wonderland Categ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mike Goutokuji",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "While she may be able to invite money and business, she was not fully trained in these powers, likely due to being outcast from a Buddhist temple by her peers.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mima",
+      "role": "Vengeful spirit (Akuryou)",
+      "abilities": "Using magic",
+      "personality": "Mima (魅魔) is a Vengeful spirit that haunts the area around the Hakurei Shrine. characterized by her ghostly form, star-themed magic, and sardonic personality, she presents herself as a powerful magician whose motives sit somewhere between mischief and malice. Although her exact origins and intention...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Minamitsu Murasa",
+      "role": "Ship Ghost / Captain of Palanquin Ship",
+      "abilities": "Power to cause shipwrecks",
+      "personality": "Minamitsu Murasa is the spirit of a young drowning victim who afterwards became a notorious threat due to her power to cause shipwrecks. After several years spent capsizing ships for the fun of it, she was recruited by Byakuren Hijiri to pilot the Palanquin Ship. When Byakuren was sealed away by hum...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Minoriko Aki",
+      "role": "Harvest Goddess",
+      "abilities": "Power to control Harvest",
+      "personality": "Minoriko Aki is the harvest goddess in Gensokyo. Along with her older sister Shizuha \"dont twin\", they control the autumn season. Minoriko battled the heroines in Stage 1 on Mountain of Faith. The reason for battling Reimu was suspecting she would be eaten, and the reason for battling Marisa is poss...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Mishaguji",
+      "role": "Curse God / Curse God, Underlings of Suwako",
+      "abilities": "Can cast curses",
+      "personality": "The Mishaguji (ミシャグジ, Mishaguji) are curse gods, native to the Suwa Region. They were powerful curse gods who amassed large amounts of faith by cursing harvests, births, and the militaries, amongst other things.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Misumaru Tamatsukuri",
+      "role": "God / Rainbow Dragon Cave",
+      "abilities": "Creating magatama",
+      "personality": "Misumaru Tamatsukuri (玉造 魅須丸 Tamatsukuri Misumaru) is the Stage 4 boss of Touhou 18, Unconnected Marketeers. She is a magatama craftsman that is found in Rainbow Dragon Cave, but she also has created Yin-Yang Orbs as well.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Miyoi Okunoda",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Mamizou Futatsuiwa (Good terms)}} Miyoi Okunoda (美宵 奥野田) is a [https://en.wikipedia.org/wiki/Zashiki-warashi Zashiki-warashi] working at the Geidontei pub and the main protagonist of Lotus Eaters.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mizuchi Miyadeguchi",
+      "role": "Vengeful spirit / Gensokyo Resident",
+      "abilities": "Capable of possessing people.",
+      "personality": "Mizuchi Miyadeguchi (宮出口 瑞霊 Miyadeguchi Mizuchi) is the main antagonist of Foul Detective Satori.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Momiji Inubashiri",
+      "role": "White Wolf Tengu / Patrols and guards Youkai Mountain",
+      "abilities": "Power to see great distances",
+      "personality": "When the heroine finally reached Youkai Mountain during the events of Mountain of Faith, Momiji Inubashiri attempted to stop her at the waterfall. Although Momiji was unsuccessful, it seems she did fulfill her duty of reporting the intruder's presence back to the other tengu with record speed as a r...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Momoyo Himemushi",
+      "role": "Oomukade / Rainbow Dragon Cave",
+      "abilities": "Eating dragons",
+      "personality": "Momoyo Himemushi (姫虫 百々世 Himemushi Momoyo) is the Extra Stage boss of Touhou 18, Unconnected Marketeers. She is the supervisor of Rainbow Dragon Cave. Category:Females Category:Characters Category:Unconnected Marketeers Category:Extra Stage Bosses",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mononobe no Futo",
+      "role": "Human(?) or Hermit(?) - A Taoist who calls herself a Shikaisen / Unknown ( formerly a hermit )",
+      "abilities": "The power to manipulate Feng shui",
+      "personality": "During the war between the Soga and Mononobe clan, Mononobe no Futo betrayed her family and allied with the Soga. As a result, the Soga were victorious. Later, Toyosatomimi no Miko, a saint, was afraid to undergo the process of immortality alone and used Futo as her test subject. Futo trusted Miko a...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mugetsu",
+      "role": "Demon / Maid?",
+      "abilities": "",
+      "personality": "Mugetsu (夢月) is the first Extra Stage boss of Lotus Land Story and possibly the creator of a mysterious dream world. She appears to be dressed as a maid of some sort, but according to the music comments of her theme \"Illusion of a Maid ~ Icemilk Magic\" in Lotus Land Story, she is probably not a maid...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Multi",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Category:Characters Category:Phantasmagoria of Dim.Dream Category:Article stubs",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Myouren Hijiri",
+      "role": "Human / Monk",
+      "abilities": "Buddhist magic",
+      "personality": "Myouren was an enigmatic character, only known to have taught Byakuren Hijiri buddhist magic. He died earlier than Byakuren.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Mystia Lorelei",
+      "role": "Night Sparrow / Tricking humans into getting lost. Grilled lamprey vendor. Guitarist in Choujuu Gigaku.",
+      "abilities": "Confusion song, night-blindness",
+      "personality": "Mystia Lorelei is a little Night Sparrow with an egocentric personality - at least she sounds arrogant - that enjoys infusing confusion and terror into the hearts of humans using her ability: a song that creates confusion in those who hear her. Her song seems to attract nearby monsters as well. She ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Nareko Michigami",
+      "role": "Dousojin / Gensokyo Resident",
+      "abilities": "Blocking roads",
+      "personality": "Nareko Michigami (道神 馴子 Michigami Nareko) is a dousojin who can be found underground. She appeared as the Stage 3 boss in Fossilized Wonders.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Narumi Yatadera",
+      "role": "Magician (animated Jizo statue)",
+      "abilities": "Capable of using magic (control of living things)",
+      "personality": "Narumi Yatadera is the fourth stage boss in Touhou 16, Hidden Star in Four Seasons. During the Four Seasons incident, she finds herself flowing with power, but is ultimately defeated. She is good friends with Marisa Kirisame. Category:Characters Category:Females Category:Stage 4 Bosses",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Nazrin",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Nemuno Sakata",
+      "role": "Yamanba / Youkai Mountain",
+      "abilities": "Creating sanctuaries",
+      "personality": "Nemuno Sakata (坂田 ネムノ Sakata Nemuno) Is a yamanba who lives in secluded areas of Youkai Mountain. She attacks the protagonist for wandering in her area. She appears as the Stage 2 midboss and Boss in Hidden Star in Four Seasons.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Nitori Kawashiro",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Nitori Kawashiro is a very shy Kappa who lives on the Youkai Mountain. In fact, the first time she saw the heroine in Mountain of Faith, she ran off with barely a word. She's good-natured though, but had an odd way of showing it when she tried to scare the heroine away from the mountain via danmaku ...",
+      "attitude_towards_aya": "Transactional. Denies all design defects and demands advertising discounts for Kappa gadgets."
+    },
+    {
+      "name": "Nue Houjuu",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Based on one of Reimu's quotes in Touhou Hisoutensoku, she is currently living with Byakuren in her temple. According to Mamizou's quote during Ten Desires, Nue called Mamizou into Gensokyo to help her out.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Orange",
+      "role": "Youkai",
+      "abilities": "",
+      "personality": "Orange (オレンジ Orenji) was just a Youkai in the mountains at night during Lotus Land Story. When the heroines happened across her, she was easily beaten. Reimu attacked simply because Orange was a youkai, and Marisa attacked simply because Orange was in the way. She has no special role in the story. C...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "PC-98 Midbosses",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "This page lists unnamed midboss characters in the PC-98 games of the Touhou series. They were given some significance within the series, but not given a name within the canon or fanon.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Parsee Mizuhashi",
+      "role": "Hashihime / Bridge Overseer",
+      "abilities": "Power to Manipulate Jealousy",
+      "personality": "Parsee Mizuhashi is a bridge princess, a youkai that serves as the guardian of a particular bridge - in this case, the \"bridge\" to the underground world. Years of jealousy for the travelers crossing over that bridge have given her the ability to control jealousy. She tries to warn away a traveler on...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Patchouli Knowledge",
+      "role": "Magician (Witch) / Intellectual, librarian, teacher and scholar.",
+      "abilities": "Manipulation of fire, water, wood, metal, earth, sun, and moon",
+      "personality": "Patchouli Knowledge is a very smart, anemic and asthmatic magician from the Scarlet Devil Mansion. Although she has only been a boss in one game, and playable character in three others, she is still a very popular character, showing up in many endings and is referenced quite often. She spends most o...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Prismriver Sisters",
+      "role": "Poltergeist",
+      "abilities": "",
+      "personality": "In Phantasmagoria of Flower View, Lyrica, the youngest of the three, goes off on her own to collect material for her songs. She wasn't really interested in solving the flower incident and would rather focus on her performance, but unknown to her, she was not alone. ja:プリズムリバー三姉妹 es:Hermanas Prismriv...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Raiko Horikawa",
+      "role": "Tsukumogami",
+      "abilities": "Riding any rhythm",
+      "personality": "thumb Raiko Horikawa (堀川 雷鼓 Horikawa Raiko) is a Tsukumogami that lives in the skies of Gensokyo, she was created during the events of Double Dealing Character and when the Miracle Mallet's magic begun to return, she found a way to get a drum from the Outside world and she told the other Tsukumogami...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Ran Yakumo",
+      "role": "Kitsune / Yukari's shikigami",
+      "abilities": "Black Magic, Shikigami Rituals",
+      "personality": "During Perfect Cherry Blossom, Ran Yakumo is busy preparing a banquet for her master, Yukari, who was still asleep as usual, when Ran was suddenly interrupted by the heroine. Because she is actually a Kitsune, and is a shikigami herself, it's highly unusual that Ran has a shikigami of her own; Chen....",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Reimu Hakurei",
+      "role": "Human / Shrine maiden",
+      "abilities": "Manipulation of Auras, High Intuition, Flight, Summoning Godly Powers",
+      "personality": "Reimu Hakurei (博麗 霊夢 Hakurei Reimu) is the Main Character of the Touhou Project series, having appeared in all of the main games and in almost every game in the series. As the sole maiden of the Hakurei Shrine, she is commonly called upon (or calls it upon herself) to investigate strange occurrences...",
+      "attitude_towards_aya": "Hostile and aggressive. Threatens to exterminate Aya unless she donates 500 Mon to the offering box."
+    },
+    {
+      "name": "Reisen (Bougetsushou)",
+      "role": "Moon Rabbit (not native from Gensokyo) / Lunar Defense Corps Trainee",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Reisen is a lunar rabbit who fled from the moon to Gensokyo early in the events of Touhou Bugetsushou. She was nursed by Reimu after being injured by space debris. Because of this, Eirin was able to learn of her presence. Because Reisen still had attachments to the moon, Eirin sent her back along wi...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Reisen Udongein Inaba",
+      "role": "Moon Rabbit (not native from Gensokyo) / Kaguya's pet, Eirin's student, medicine seller.",
+      "abilities": "Lunacy-inducing eyes, Telepathy with other Moon Rabbits, Manipulation of Wavelengths (Soundwaves and Lightwaves), Manipulation of Madness.",
+      "personality": "Reisen Udongein Inaba is one of the legendary lunar rabbits; she fled from the Moon to Earth as a refugee from the \"Lunar War\" between the two worlds that began in 1969 A.D. after the Apollo 11 \"invasion\". Making her way to Gensokyo she was surprised to meet the notorious fugitives Kaguya and Eirin,...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Reisen Udongein Inaba/Talk",
+      "role": "Tsukumogami (Biwa boku boku) / Performing Music",
+      "abilities": "Making sounds on her own",
+      "personality": "Benben Tsukumo is a Tsukumogami that creates sounds of her own with her Biwa. She is the older sister of Yatsuhashi Tsukumo. She appears in Double Dealing Character as the Stage 4 Mid-Boss, Boss, and the Extra Stage Midboss along with Yatsuhashi. Category:Characters Category:Double Dealing Character...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Remilia Scarlet",
+      "role": "Vampire (not native to Gensokyo) / Mistress of the Scarlet Devil Mansion",
+      "abilities": "Manipulation of Fate, Supernatural powers",
+      "personality": "Remilia Scarlet is the owner and head of the Scarlet Devil Mansion, the mistress of Sakuya Izayoi and Hong Meiling, and the older sister (and guardian) of Flandre Scarlet. Though her appearance (and often behavior) is childlike, and seems nonthreatening, She has fearsome magical powers and a reputat...",
+      "attitude_towards_aya": "Arrogantly amused. Treats the interview like an imperial audience while mocking Tengu rumors."
+    },
+    {
+      "name": "Renko Usami",
+      "role": "Human / University Student (Super unified physics major)",
+      "abilities": "Able to tell when and where she is by looking at the sky (a living GPS).",
+      "personality": "Renko Usami is a student in the outside world, presumably in a college or university. She majors in physics and is very objective and logical in her approach to matters. Together with her friend, Maribel Hearn, she has an interest in what would be considered the paranormal. Their club, consisting of...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Rika",
+      "role": "Human / Engineer",
+      "abilities": "Mystical Spell Cards",
+      "personality": "During Story of Eastern Wonderland, Rika, for whatever reason, created a large number of monsters and started hanging around the Hakurei Shrine while Reimu was away. Category:Story of Eastern Wonderland Category:Characters Category:Females Category:Extra Stage Bosses Category:Stage 1 Bosses",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Rikako Asakura",
+      "role": "Human / Scientist",
+      "abilities": "",
+      "personality": "Rikako Asakura (朝倉 理香子 Asakura Rikako) is among the few people in Gensokyo who values science more than magic. Because of this, she's regarded as a heretic by Reimu. Category:Characters Category:Characters Category:Females Category:Humans",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Rin Kaenbyou",
+      "role": "Kasha / Controller of spirits in the remnants of the Hell of Blazing Fires",
+      "abilities": "Power to carry away Corpses. Ability to control the Evil Spirits of Hell",
+      "personality": "Rin Kaenbyou or Orin is one of Satori's pets, whose job is to carry corpses to the former Hell of Blazing Fires to regulate its heat. Before the events of Subterranean Animism, Rin learned of her old friend Utsuho's newly acquired power, and of her plans to conquer the above ground. She got terrifie...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Rin Satsuki",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A Twitter post from an individual who attended Comiket 62 claimed they were informed that this design was for a \"poster girl\" by Team Shanghai Alice. Furthermore, it was indicated that this character was not intended to appear in \"Embodiment of Scarlet Devil.\" The individual explicitly did not inqui...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Ringo",
+      "role": "Moon Rabbit / Lunarian military informant",
+      "abilities": "Growing in strength by eating dango",
+      "personality": "Ringo (鈴瑚 Ringo) is a moon rabbit who appears as the stage 2 boss in Legacy of Lunatic Kingdom.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Rinnosuke Morichika",
+      "role": "Half-youkai Half-human / Owner of Kourindou, an antique shop",
+      "abilities": "Able to recognize the name and purpose of an item at a glance",
+      "personality": "Rinnosuke Morichika runs Kourindou, an antique shop near the Forest of Magic. He chose this location in the hopes that both human and non-human potential customers would visit, but his plan failed miserably as his shop is always deserted, with the exception of a few daily \"annoyances\".",
+      "attitude_towards_aya": "Pedantic lecture mode. Explains Outside World technology with 100% incorrect confidence."
+    },
+    {
+      "name": "Rumia",
+      "role": "Dark Youkai / \"Attacking humans is a youkai's job.\"",
+      "abilities": "Manipulation of Darkness",
+      "personality": "Rumia's hair ribbon is actually an amulet. She can't touch it, so she can't take it off. ==Story== In the events of Embodiment of Scarlet Devil, she was attacked by the heroines for no reason (probably just as a general warmup), and had nothing to do with the main story.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Ruukoto",
+      "role": "Robot / Maid",
+      "abilities": "",
+      "personality": "Ruukoto is the robot maid that Reimu Hakurei gets as a prize when she goes into the ruins in the ending of Phantasmagoria of Dim. Dream. She is nuclear powered, though Marisa Kirisame jokes she feeds on Reimu's dreams every night.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sagume Kishin",
+      "role": "Goddess",
+      "abilities": "Reversing anything with her words",
+      "personality": "Sagume Kishin is a lunarian goddess or divine spirit. She made her debut as the stage 4 midboss and boss in [http://touhou.wikia.com/wiki/Legacy_of_Lunatic_Kingdom Legacy of Lunatic Kingdom]. Her words are always lies, because the world will make it so. If she says the sky is blue, it will change co...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Saki Kurokoma",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sakuya Izayoi",
+      "role": "Human / Maid, Scarlet Devil Mansion Chief Maid",
+      "abilities": "Manipulation of Time (Stop), Manipulation of Space, Knife proficiency",
+      "personality": "Later, during Perfect Cherry Blossom, Sakuya is able to show more of her true character, even if her main reason for trying to solve the problem is that the delayed Spring will affect her too.",
+      "attitude_towards_aya": "Coldly polite. Subtle knife-twirling warning that prying near Lady Remilia is strictly forbidden."
+    },
+    {
+      "name": "Sanae Kochiya",
+      "role": "Human (not native to Gensokyo), descendant of a goddess / Wind Priestess, Shrine Maiden, Scientist (Amateur)",
+      "abilities": "Power to cause miracles to occur",
+      "personality": "Sanae Kochiya is a human, but is also a distant descendant of a god, Suwako Moriya. Her role at the Moriya Shrine is similar to a Shrine Maiden, but with her inherited power Sanae has become more like a deity herself. When humans on the outside world began losing their faith in her and Kanako, the s...",
+      "attitude_towards_aya": "Eager for PR coverage to promote Moriya Shrine, slipping in geeky Outside World mecha references."
+    },
+    {
+      "name": "Sannyo Komakusa",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "She is found outside of Rainbow Dragon Cave in said game, where the protagonist defeats her after being unwilling to share information. She appears to be a heavy smoker, and can even use tobacco smoke to control the minds of others, which she mainly uses to calm patrons at her gambling dens to preve...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sara",
+      "role": "Likely Demon / Gatekeeper",
+      "abilities": "",
+      "personality": "During the events of Mystic Square the heroine entered a mountain cave that held the door to Makai. Sara was there and attempted to prevent the heroine from entering, referring to Reimu as \"prey.\" Because she is officially the gatekeeper of the door to Makai. It was her job to keep the heroines out,...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sariel",
+      "role": "Angel / Angel of Death",
+      "abilities": "",
+      "personality": "Reimu encounters Sariel deep within Makai. They are the final enemy Reimu confronts there before returning to her shrine. But since they have no profile and exchange no dialogue with Reimu, nothing else is known about this enemy. Category:Highly Responsive to Prayers Category:Characters Category:Fem...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Satono Nishida",
+      "role": "Possibly a human / Servant of Okina Matara",
+      "abilities": "Drawing out people's mental energy by dancing behind them",
+      "personality": "Satono Nishida is the fifth stage boss and extra stage midboss in Touhou 16, Hidden Star in Four Seasons. Category:Characters Category:Females Category:Penultimate Bosses",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Satori Komeiji",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Satori Komeiji is the Mistress of the Palace of the Earth Spirits after the underground city was separated from Hell. She barely gets any visitors because her ability to read minds makes various youkai and spirits fear her, while leaving her well-loved by the animals that normally can't be understoo...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Seiga Kaku",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Seiga Kaku was once a Chinese human. She had a large interest in Taoism and one day, she became a hermit. She used a technique she learned from a book and faked her death. Seiga wanted to spread Taoism around her country, however Taoism was already popular in her country, so Seiga moved to Japan and...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Seija Kijin",
+      "role": "Amanojaku / Flipping Things",
+      "abilities": "Turning anything over",
+      "personality": "Seija Kijin is an Amanojaku who lives in the Shining Needle Castle. She made her debut as the Stage 5 Midboss and Boss and also Stage 6 miniboss of Double Dealing Character. Seija is also the main character of the spinoff game, Impossible Spell Card.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Seiran",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Seiran has dark blue hair, tied in a bushy ponytail, with ears similar to Reisen's on the top of her head, and red eyes. Her dress is periwinkle with frills and an alternating star and crescent moon pattern across the bottom.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sekibanki",
+      "role": "Rokurokubi / Scaring Humans",
+      "abilities": "Ability to make her head fly",
+      "personality": "Sekibanki is a Rokurokubi that lives in the Human Village. Sekibanki made her first appearance in Double Dealing Character as the Stage 2 Mid-boss and Boss. She also masquerades as a human.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Shanghai",
+      "role": "Doll / A Doll used in Alice's Spell Cards",
+      "abilities": "Destructive Magic",
+      "personality": "Shanghai is one of Alice Margatroid's dolls. She is seen more often than Hourai. Shanghai appears in Alice's Curse \"Eerily Luminous Shanghai Dolls\" spell cards (spell cards 041, 042, and 043 of Perfect Cherry Blossom). Category:Characters Category:Females",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Shinki",
+      "role": "Goddess / Goddess and creator of Makai",
+      "abilities": "Creating any world",
+      "personality": "Shinki (神綺) is the creator of Makai, a world of demons whose entrance is located near the Hakurei Shrine in a mountain cave. During the events of Mystic Square Shinki allowed a tourist agency in Makai to organize trips for the demons there to the human world of Gensokyo. Various heroines from Gensok...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Shinmyoumaru Sukuna",
+      "role": "Kobito / Princess",
+      "abilities": "Ability to grant wishes using the Miracle Mallet",
+      "personality": "Shinmyoumaru Sukuna is a Kobito, or Inchling (the only one at that), and is the final boss of Double Dealing Character. As a kobito, she is able to use the Miracle Mallet, the kobito's most sacred treasures capable of granting wishes and mostly used for size-changing. She wanted to give weapons and ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Shion Yorigami",
+      "role": "Poverty God",
+      "abilities": "Capable of making people unlucky, including herself",
+      "personality": "Shion Yorigami is one of the final bosses in Touhou 15.5, Antinomy of Common Flowers. She is the true culprit behind the Perfect Possession incident alongside her sister, Jo'on Yorigami.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Shizuha Aki",
+      "role": "Goddess of Turning Leaves",
+      "abilities": "Power to control the Turning of Leaves",
+      "personality": "Shizuha Aki is Minoriko's older sister and was according to her profile text under the impression that the heroine in Mountain of Faith was coming to disrupt autumn, which prompted her to attack. She was easily defeated, however, being a mere first stage mid boss. Category:Characters Category:Female...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Shou Toramaru",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Shou Toramaru is a disciple of the god Bishamonten. Along with Captain Murasa and the other youkai aboard the Palanquin Ship, she was seeking to revive Byakuren Hijiri after Byakuren had been sealed away in Makai by humans.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "SinGyoku",
+      "role": "Gatekeeper",
+      "abilities": "Able to change forms",
+      "personality": "SinGyoku appears to attempt to prevent Reimu from entering the gates to Hell and/or Makai in Highly Responsive to Prayers, where the two battle. Next to nothing is known about this enemy, as it does not exchange dialog with Reimu and has no official profile. Judging from its appearance, SinGyoku is ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Soga no Tojiko",
+      "role": "Ghost / Guard of the Dream Palace Great Mausoleum",
+      "abilities": "The power to summon thunder",
+      "personality": "Soga no Tojiko is a ghost of a powerful clan known as the Soga. Tojiko along with Futo served Miko. Tojiko's resurrection as a human was denied due to her previous connections with Futo. However, Tojiko didn't mind, as the human body would break down easily.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sokrates",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Son Biten",
+      "role": "Sarugami",
+      "abilities": "Manipulating wild monkeys",
+      "personality": "Son Biten (孫 美天 Son Biten) is a sarugami living in the yamanba section of Youkai Mountain who is convinced that she's a reincarnation of Sun Wukong.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Star Sapphire",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Suika Ibuki",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Suika Ibuki is currently the only Oni living on the surface in Gensokyo. The rest of the oni live underground in the Ancient City. Like most oni, she has a ridiculous amount of strength and loves to drink sake. Her personality is jolly and childish, as you'd expect from her appearance. She is strong...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sumireko Usami",
+      "role": "Human / High School Student at Higashifukami High",
+      "abilities": "Manipulating psychic powers (Also known as PSI)",
+      "personality": "Sumireko Usami (宇佐見 菫子 Usami Sumireko) is a human from the Outside World with psychic abilities, and the final boss of Urban Legend in Limbo.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Sunny Milk",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Suwako Moriya",
+      "role": "Goddess of Mountains (not native to Gensokyo) / Moriya Shrine's former goddess",
+      "abilities": "The ability to create earth, ability to summon curse gods (Mishaguji)",
+      "personality": "Suwako Moriya is the extra boss of Mountain of Faith and true goddess of the Moriya Shrine. Although, she said the shrine wasn't exactly hers (she mentioned it in both Reimu's and Marisa's story) saying it was officially Kanako's because she was beaten by her and had to relinquish control of the Shr...",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Takane Yamashiro",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "She is a yamawaro, a variant of kappa that doesn't live in the river. She is described as their leader. As a result of her ability being manipulation of forest qi, all of her attacks in Unconnected Marketeers have the color green in them.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Tenshi Hinanawi",
+      "role": "Celestial / Celestial",
+      "abilities": "Manipulation of Land and Weather. Manipulation of Temperament by using The Sword of Hisou",
+      "personality": "Tenshi Hinanawi is the \"final\" boss for most of the characters in Scarlet Weather Rhapsody and the \"Eldest Daughter\" of the Hinanawi clan (as referred to by Iku Nagae) that resides in Heaven.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Tewi Inaba",
+      "role": "Youkai Rabbit / Leader of rabbits in Eientei",
+      "abilities": "Can grant good luck and fortune to Humans",
+      "personality": "Tewi Inaba is one of the many youkai rabbits that live at and guard Eientei, a mansion deep within the Bamboo Forest of the Lost, she's the one all the earth rabbits listen to. Tewi is known to help lost people find their way out of the forest and sometimes grants them good fortune, she's one of the...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Three Mischievous Fairies",
+      "role": "Fairy",
+      "abilities": "*Sunny: Able to control the refraction of light",
+      "personality": "These Three Mischievous Fairies love playing pranks on people and are known for their teamwork, even if it is sometimes haphazard. Because they each possess a different power, they are able to combine their talents to do what they could not achieve on their own. However, they often fail regardless. ...",
+      "attitude_towards_aya": "Easily startled or prone to childish pranks, complaining about being disturbed."
+    },
+    {
+      "name": "Tokiko",
+      "role": "Youkai (Crested Ibis?)",
+      "abilities": "Mystical Spell Cards",
+      "personality": "In Curiosities of Lotus Asia Tokiko was beaten and robbed by Reimu. She is probably just one of the many weak youkai in Gensokyo. She seems to value and enjoy books. She is known to argue with Rinnosuke often, but despite that has never officially been given a name. Category:Characters Category:Fema...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Toyosatomimi no Miko",
+      "role": "Half-Saint",
+      "abilities": "Ability to listen to ten people speaking at the same time and to listen to human's desires",
+      "personality": "Toyosatomimi no Miko is a saint born with high intelligence. She became interested in Taoism after hearing about it from Seiga, as it provided immortality and superhuman strength. She took the steps of a shikaisen; however, she was afraid to undergo this process alone, so Futo assisted Miko as her t...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Tsukasa Kudamaki",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Category:Females Category:Characters Category:Unconnected Marketeers",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Ubame Chirizuka",
+      "role": "Yamanba / Youkai Mountain",
+      "abilities": "Destroying sanctuaries",
+      "personality": "Ubame Chirizuka (塵塚 ウバメ Chirizuka Ubame) is the chief of the yamanba who lives on Youkai Mountain. She appeared as the Stage 1 midboss and boss in Fossilized Wonders.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Udzuki (Cookie/Inmu)",
+      "role": "Human / Magician, Kirisame Magic Shop owner, burglar, part-time youkai hunter",
+      "abilities": "High-level Magic",
+      "personality": "Marisa Kirisame (霧雨 魔理沙 Kirisame Marisa) is a human magician, and is one of the most important sub-characters of the series (according to series producer ZUN). Her personality is sometimes described as disagreeable, but in some other titles, straightforward. Either way, she is a very self-confident ...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Unnamed Giant Catfish",
+      "role": "Namazu?",
+      "abilities": "Causing earthquakes [http://web-japan.org/nipponia/nipponia33/en/animal/animal01.html ] , Impersonation/Shape-Shifting?",
+      "personality": "The Unnamed Giant Catfish is a villainous avatar of Taisui Xingjun, a God of Calamity who sent assassins (disguised as familiar characters) to attack Meiling. His objective, as he claims, was to drain her of her power so that he could move the earth and return to this world once again. He also spoke...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Unzan",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Urumi Ushizaki",
+      "role": "Ushi-oni / Harvesting fish ghosts",
+      "abilities": "Changing the weight of everyday objects",
+      "personality": "Urumi Ushizaki is the second stage midboss and boss of Touhou 17, Wily Beast and Weakest Creature. She is an oni who runs a fishery in the Sanzu River. During her debut game, she encounters the protagonist and fights her to protect the endangered fishes in the river. Category:Characters Category:Fem...",
+      "attitude_towards_aya": "Arrogantly amused. Treats the interview like an imperial audience while mocking Tengu rumors."
+    },
+    {
+      "name": "User blog:Ningen Zoo/Zamasu",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Utsuho Reiuzi",
+      "role": "Hell Raven, Yatagarasu / Regulator of the flames in the Former Hell of Blazing Fires",
+      "abilities": "Manipulation of Nuclear Fusion, Manipulation of Hell Blazing Fires (before she obtained the Nuclear power)",
+      "personality": "Utsuho Reiuzi or Okuu is one of Satori's pets, a Hell Raven who has lived in the underground world since before it was separated from Hell. Her job is to regulate the flames of the Hell of Blazing Fires.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "VIVIT",
+      "role": "Robot (Android) / Maid",
+      "abilities": "",
+      "personality": ":For other uses, see Vivit (disambiguation). This Vivit is not to be confused with Vivit (Erich's daughter), VIVIT-r, and normal stage enemies. ==Main Profile==",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "VIVIT-r",
+      "role": "Android / Maid",
+      "abilities": "",
+      "personality": ":For other uses, see Vivit (disambiguation). This Vivit is not to be confused with Vivit (Erich's daughter), VIVIT, and normal stage enemies. ==Main Profile==",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Vivit (Erich's Daughter)",
+      "role": "Human(?)",
+      "abilities": "",
+      "personality": ":For other uses, see Vivit (disambiguation). This Vivit is not to be confused with VIVIT, VIVIT-r, and normal stage enemies. Vivit (ビビット Bibitto) is Erich's daughter who is the Final boss of Shuusou Gyoku. Decades ago, a disastrous accident happened caused by cactus energy got Vivit trapped in a mac...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Wakasagihime",
+      "role": "Mermaid / Being cute",
+      "abilities": "Ability to grow in power when underwater",
+      "personality": "Wakasagihime is a mermaid princess that lives in the Misty Lake. She first appears in Double Dealing Character, and is the First boss in said game. She seems to know Kagerou Imaizumi (which was humourously Wakasagihime nearly being eaten by her). She uses spellcards such as Scale Rib and Tailfin Sla...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Watatsuki no Toyohime",
+      "role": "Lunarian / Former Moon Princess, Leader of the Lunar Defense Corps",
+      "abilities": "Good fortune; can manipulate the boundaries between the Earth and Moon, and between the scientific and fantastic versions of the Moon; can link the sea and mountains. Carries a fan capable of inflicting mass destruction.",
+      "personality": "Watatsuki no Toyohime is a Moon Princess. Along with her sister Watatsuki no Yorihime, she leads the Lunar Defence Corps.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Watatsuki no Yorihime",
+      "role": "Lunarian / Leader of the Lunar Defense Corps",
+      "abilities": "Easily absorbs knowledge, superb swordsmanship skills, can summon the power of the gods.",
+      "personality": "Watatsuki no Yorihime is a Lunarian. Along with her older sister Watatsuki no Toyohime, she leads the Lunar Defence Corps.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Wriggle Nightbug",
+      "role": "Youkai Firefly",
+      "abilities": "Manipulation of Insects",
+      "personality": "Wriggle Nightbug is a youkai firefly with the ability to control other insects around her. They like using their ability to direct concerted performances for his/her own amusement. They also like using it to attack humans who underestimate her significance or the importance of insects in general; th...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yachie Kicchou",
+      "role": "Jidiao / Matriarch of the Kiketsu Family",
+      "abilities": "Making people lose the will to fight back",
+      "personality": "She first appeared as the mid-boss and boss of stage 4 of Wily Beast and Weakest Creature and is the leader of the otter spirits. Prior to the events of the game, she sent the beast spirits to the Human Realm to search for a human who could help against the haniwa army made by Keiki Haniyasushin.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yamame Kurodani",
+      "role": "Tsuchigumo / Underground",
+      "abilities": "Power to manipulate illness (especially infectious diseases)",
+      "personality": "Yamame Kurodani (黒谷 ヤマメ Kurodani Yamame) is the stage 1 boss in Subterranean Animism, but unlike the previous bosses, she is quite bright and has no hatred for Humans. Her ability to manipulate illness makes many youkai and humans hate her, but she won't use it for no reason. And she is quite well k...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yatsuhashi Tsukumo",
+      "role": "Tsukumogami (Koto furu nushi) / Performing Music",
+      "abilities": "Creating sounds of her own",
+      "personality": "Yatsuhashi Tsukumo is a Tsukumogami, transformed from a Koto. She is the younger sister of Benben Tsukumo. She appears as the Stage 4 Mid-Boss and Stage 4 Boss, and Extra Stage Mid-Boss along with her sister. They are not biological sisters -- they only call themselves sisters since they were \"born\"...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yeiko Komeiji",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "* Long, pink hair with the characters 𛀁, ゐ, 𛀆, and ゑ. * Japanese coloured face with pure-black eyes that are leaking ink; along with a straight face. * A brownish kimono with grey sleeves, holding what appears to be a blood-vessel yin yang. * A ghost tail. * A third eye. Category:Fanon and Memes Cat...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yoshika Miyako",
+      "role": "Jiang Shi / Dream Palace Great Mausoleum Guard",
+      "abilities": "Ability to eat (absorb) anything",
+      "personality": "During Ten Desires, Yoshika Miyako attempts to stop the heroine from entering the mausoleum. It reveals she is Seiga's servant.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Youki Konpaku",
+      "role": "Half-human half-phantom hybrid / Currently in hermitude, formerly a gardener and swordfighting instructor",
+      "abilities": "Swordfighting",
+      "personality": "Youki Konpaku has an enigmatic character who has yet to make an actual appearance in any Touhou game. He was the gardener for the Saigyouji clan at Hakugyokurou before leaving it to his successor and student Youmu Konpaku. It is thought that he, too, is a half-phantom. No one currently knows his whe...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Youmu Konpaku",
+      "role": "Half human half phantom hybrid / Gardener, Sword Instructor",
+      "abilities": "Swordfighting-Two-Sword Style of Life (生命の二刀流), concentration, superhuman speed(?)",
+      "personality": "Youmu commonly wields two blades at once, having studied under her predecessor, Youki. The longer blade, called 楼観剣 (Roukanken) - Lookout-Tower Sword, is said to be able to kill ten ghosts in one swipe. The shorter blade, 白楼剣 (Hakurouken) - White Tower Sword, is able to cleave through a person's own...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yuiman Asama",
+      "role": "Old Shinjin (God-human) / Asama Purifying Mountain (Pit of Four Seasons)",
+      "abilities": "Causing things to be reborn by feeding them to her snake",
+      "personality": "Ariya's profile suggests that her main motivation for causing the incident in Fossilized Wonders was to save Yuiman, and that doing so made \"her heart of stone\" shift, implying a close bond between the two.",
+      "attitude_towards_aya": "Condescending or commercially demanding. Insists on more faith offerings before answering."
+    },
+    {
+      "name": "Yukari Yakumo",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "About a thousand years ago, Yukari met and became friends with a human girl named Yuyuko. After Yuyuko died, Yukari continued to be friends with Yuyuko's ghost, although Yuyuko gradually forgot who she had been and why she had died. In Perfect Cherry Blossom, Yuyuko requested that Yukari use her pow...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yuki",
+      "role": "Witch / Black Witch",
+      "abilities": "Fire Magic",
+      "personality": "When the heroine traveled into Makai during the events of Mystic Square Yuki was waiting for her arrival. Along with her partner Mai she attempted to prevent the heroine from going any further in a two on one battle, but ultimately failed. Yuki is the more vocal of the two. Category:Mystic Square Ca...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yumeko",
+      "role": "Unknown, probably a demon / Maid",
+      "abilities": "Space manipulation",
+      "personality": "After the heroine reaches Shinki during the events of Mystic Square, Yumeko interrupts and insists that Shinki allow her to handle the intruder herself. Although polite towards her mistress Shinki, Yumeko regards the heroine with disdain. Once she is defeated Shinki tells the heroine that Yumeko was...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yumemi Okazaki",
+      "role": "Human / Professor, Scientist",
+      "abilities": "Artificial Magic",
+      "personality": "Yumemi Okazaki is searching for the mysterious power of magic so that she can study it and bring her findings back to the scientific community. When she arrives in Gensokyo her ship is mistaken for ruins by the inhabitants, due to Chiyuri writing a flier with false information, saying that whoever e...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "YuugenMagan",
+      "role": "Demon (?)",
+      "abilities": "",
+      "personality": "A resident of Gensokyo caught in Aya's camera sights.",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yuugi Hoshiguma",
+      "role": "Oni / Manager of Old Hell’s Hot Spring Town",
+      "abilities": "Wielding unexplainable phenomena",
+      "personality": "Yuugi Hoshiguma is an oni. Like other oni, she's ridiculously strong, likes strong people, drinks heavily and enjoys raising a ruckus. She, along with Suika, was one of four particularly feared oni long ago. She rushes off to meet an intruder in the underground Ancient City, once part of Hell, and, ...",
+      "attitude_towards_aya": "Arrogantly amused. Treats the interview like an imperial audience while mocking Tengu rumors."
+    },
+    {
+      "name": "Yuuka Kazami",
+      "role": "Gensokyo Resident",
+      "abilities": "Mystical Spell Cards",
+      "personality": "Yuuka Kazami (風見 幽香 Kazami Yuuka) is a long-lived youkai called the \"Flower Master of the Four Seasons\" whose main place of activity is the Garden of the Sun during Phantasmagoria of Flower View. Whereas when Yuuka first debuted in Lotus Land Story from the PC-98 games, she was the master of a mansi...",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yuuma Toutetsu",
+      "role": "Taotie / Chairwoman of the Gouyoku Alliance",
+      "abilities": "Absorbing anything",
+      "personality": "Category:Characters Category:Final Bosses Category:Females Category:Final Bosses (Fighting Games) Category:Penultimate Bosses",
+      "attitude_towards_aya": "Guarded or irritated. Demands to know who authorized this intrusive Tengu surveillance."
+    },
+    {
+      "name": "Yuyuko Saigyouji",
+      "role": "Ghost / Ghost princess",
+      "abilities": "Manipulation of Death, Ability to control departed souls",
+      "personality": "Yuyuko Saigyouji is the ghost princess of Hakugyokurou, the netherworld of the \"formerly-living\", but was once a living human. Long ago, after her death from suicide, her body was used to place a seal on the Saigyou Ayakashi, a dangerous youkai cherry tree, to stop it from killing innocent humans. S...",
+      "attitude_towards_aya": "Carefree and hungry. Completely ignores the questions and asks if the evidence is edible."
+    },
+    {
+      "name": "Zanmu Nippaku",
+      "role": "Oni (Formerly Human) / Gensokyo Resident",
+      "abilities": "Manipulating nothingness",
+      "personality": "Zanmu Nippaku (日白 残無 Nippaku Zanmu) is a character who debuts in Unfinished Dream of All Living Ghost.",
+      "attitude_towards_aya": "Arrogantly amused. Treats the interview like an imperial audience while mocking Tengu rumors."
     }
   ],
   "advertisers": [
@@ -99,7 +1295,7 @@
       "proprietor": "Nitori Kawashiro & Engineering Guild",
       "business_focus": "Aquatic Machinery, Hydro-Jets & Experimental Weaponry",
       "typical_offerings": "Amphibious jetpacks, camouflage cloaks, waterproof drill-arms, automatic cucumber peelers.",
-      "ad_tone": "Aggressive startup tech pitch, boasts low explosion odds (e.g. 'only 35% detonation risk!'), offers free bonus gadgets."
+      "ad_tone": "Aggressive startup tech pitch, boasts low explosion odds (e.g. 'only 38% detonation risk!'), offers free bonus gadgets."
     },
     {
       "sponsor": "Hakurei Shrine (博麗神社)",
@@ -128,6 +1324,20 @@
       "business_focus": "Aristocratic Hospitality & Vampire Banquets",
       "typical_offerings": "Crimson black tea sets, private ballroom reservations, fine silverware appraisals, daytime parasol fittings.",
       "ad_tone": "Extravagant gothic aristocracy, subtly reminds patrons that uninvited gate-crashers will be disciplined by the gatekeeper."
+    },
+    {
+      "sponsor": "Geidontei Izakaya (鯢呑亭)",
+      "proprietor": "Miyoi Okunoda",
+      "business_focus": "Human Village Pub & Memory-Dulling Drinks",
+      "typical_offerings": "Fresh river fish platters, mysterious sake that erases embarrassing memories, midnight snacks.",
+      "ad_tone": "Warm village tavern hospitality, casual gossip, guarantees you won't remember how much you spent."
+    },
+    {
+      "sponsor": "Suzunaan Book Rental (鈴奈庵)",
+      "proprietor": "Kosuzu Motoori",
+      "business_focus": "Demon Books & Foreign Literature Rental",
+      "typical_offerings": "Cursed grimoires, foreign manga, ancient scrolls, translation glasses rentals.",
+      "ad_tone": "Enthusiastic bookworm pitch, reminds customers not to unleash ancient evil spirits in the reading room."
     }
   ]
 }
