@@ -182,7 +182,7 @@ BunBunMaru_LLM/
 │   ├── __init__.py
 │   └── scraper.py               # Automated Touhou Wiki lore & character harvester
 ├── data/
-│   └── gensokyo_directory.json  # Comprehensive 182-character dossier & commercial sponsors
+│   └── gensokyo_directory.json  # Comprehensive 182-character dossier & 21 commercial sponsors
 ├── assets/
 │   └── bunbunmaru_newspaper.png # Rendered sample broadsheet clipping
 ├── bunbunmaru.py                # Hot-wire reporting pipeline script

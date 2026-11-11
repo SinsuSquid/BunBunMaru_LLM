@@ -3,7 +3,7 @@
     "source": "https://touhou.fandom.com/wiki/Touhou_Wiki",
     "harvested_at": "2026-11-11T14:24:09.703318",
     "character_count": 182,
-    "sponsor_count": 8,
+    "sponsor_count": 21,
     "description": "Comprehensive Gensokyo Directory harvested from Touhou Wiki for Bunbunmaru Newspaper LLM grounding."
   },
   "interviewees": [
@@ -1326,6 +1326,13 @@
       "ad_tone": "Extravagant gothic aristocracy, subtly reminds patrons that uninvited gate-crashers will be disciplined by the gatekeeper."
     },
     {
+      "sponsor": "Voile Secret Library (大図書館)",
+      "proprietor": "Patchouli Knowledge & Koakuma",
+      "business_focus": "Forbidden Grimoires & Arcane Research Rental",
+      "typical_offerings": "Elemental spellcard scrolls, ancient demonology volumes, silent study cubicles.",
+      "ad_tone": "Quiet, intellectual, strictly enforces late fees paid in elemental mana, warns that book thieves will be incinerated."
+    },
+    {
       "sponsor": "Geidontei Izakaya (鯢呑亭)",
       "proprietor": "Miyoi Okunoda",
       "business_focus": "Human Village Pub & Memory-Dulling Drinks",
@@ -1338,6 +1345,90 @@
       "business_focus": "Demon Books & Foreign Literature Rental",
       "typical_offerings": "Cursed grimoires, foreign manga, ancient scrolls, translation glasses rentals.",
       "ad_tone": "Enthusiastic bookworm pitch, reminds customers not to unleash ancient evil spirits in the reading room."
+    },
+    {
+      "sponsor": "Kirisame Magic Shop (霧雨魔法店)",
+      "proprietor": "Marisa Kirisame",
+      "business_focus": "High-Explosive Potions & Scrap Salvage",
+      "typical_offerings": "Mini-Hakkero blast repairs, enchanted mushroom powders, high-speed broom waxing, suspicious magical junk.",
+      "ad_tone": "Energetic, tomboyish pitch, promises maximum firepower and disclaims all liability for accidental forest fires."
+    },
+    {
+      "sponsor": "Sanzu River Ferry & Cruise Co. (三途の川 渡し船)",
+      "proprietor": "Komachi Onozuka",
+      "business_focus": "Afterlife River Transit & Scenic Cruises",
+      "typical_offerings": "One-way soul passage, scenic boat tours, currency exchange for ancient copper coins.",
+      "ad_tone": "Lazy, cheerful ferryman pitch, offers discounts if passengers row themselves while the ferryman naps."
+    },
+    {
+      "sponsor": "Ancient City Onsen & Magma Spa (旧都温泉街)",
+      "proprietor": "Yuugi Hoshiguma & Underworld Oni",
+      "business_focus": "Boiling Geothermal Hot Springs & Oni Taverns",
+      "typical_offerings": "Natural magma sulfur baths, 100-proof demon sake casks, bare-knuckle arm wrestling matches.",
+      "ad_tone": "Boisterous, high-energy Oni hospitality, boasts that no human has survived more than 10 minutes in the master bath."
+    },
+    {
+      "sponsor": "Palace of Earth Spirits Pet Services (地霊殿)",
+      "proprietor": "Satori Komeiji & Rin Kaenbyou",
+      "business_focus": "Mind-Reading Therapy & Underworld Cartage",
+      "typical_offerings": "Psychic counseling (no speaking necessary), wheelbarrow heavy haulage, hellfire heating fuel.",
+      "ad_tone": "Eerily calm, reminds clients that Satori already knows your problem before you arrive."
+    },
+    {
+      "sponsor": "Myouren Temple Zen Retreat (命蓮寺)",
+      "proprietor": "Byakuren Hijiri",
+      "business_focus": "Youkai-Human Harmony & Buddhist Meditation",
+      "typical_offerings": "Motorcycle-blessed sutra scrolls, daily vegetarian temple meals, anger management for vengeful spirits.",
+      "ad_tone": "Warm, compassionate, holy aura, welcoming all species while gently lecturing troublesome hermits."
+    },
+    {
+      "sponsor": "Hakugyokurou Ghost Banquet & Catering (白玉楼)",
+      "proprietor": "Yuyuko Saigyouji & Youmu Konpaku",
+      "business_focus": "Netherworld Feasts & Phantom Landscaping",
+      "typical_offerings": "All-you-can-eat ghost banquets, Roukanken precision hedge trimming, cherry blossom viewing spots.",
+      "ad_tone": "Dreamy, whimsical, food-obsessed, Youmu frantically adds a disclaimer that Lady Yuyuko ate half the supplies."
+    },
+    {
+      "sponsor": "Misty Lake Ice & Leisure Park (霧の湖)",
+      "proprietor": "Cirno & Lake Fairies",
+      "business_focus": "Sub-Zero Recreational Activities & Frog Preservation",
+      "typical_offerings": "Instant flash-frozen frog popsicles, ice skating lessons by the Strongest, giant catfish warning whistles.",
+      "ad_tone": "Childish, loud, boastful, claims that freezing things is the ultimate solution to all life problems."
+    },
+    {
+      "sponsor": "Bamboo Forest Guide & Rescue Service (迷いの竹林)",
+      "proprietor": "Fujiwara no Mokou & Tewi Inaba",
+      "business_focus": "Mist Navigation & Emergency Fire Rescues",
+      "typical_offerings": "Anti-pitfall bamboo walking sticks, immortal flame emergency signal flares, lucky rabbit-foot charms.",
+      "ad_tone": "Tough, no-nonsense mercenary guide pitch, warning travelers that pitfall traps are 100% Tewi's fault."
+    },
+    {
+      "sponsor": "Keiga Family Security & Protection (勁牙組)",
+      "proprietor": "Saki Kurokoma",
+      "business_focus": "Pegasus Bodyguard Services & Muscle Enforcement",
+      "typical_offerings": "Yakuza debt collection, aerial strike security escorts, hoof-to-face conflict resolution.",
+      "ad_tone": "Rowdy outlaw swagger, values raw physical strength above all, promises total protection to loyal clients."
+    },
+    {
+      "sponsor": "Garden of the Sun Florist & Honey (太陽の畑)",
+      "proprietor": "Yuuka Kazami",
+      "business_focus": "Botanical Splendor & Pure Flower Honey",
+      "typical_offerings": "Giant sunflower bouquets, sweet floral nectar, parasol shade rentals.",
+      "ad_tone": "Polite, smiling, terrifyingly menacing, casually mentions that trespassers who step on the flowers become fertilizer."
+    },
+    {
+      "sponsor": "Shining Needle Miniature Haberdashery (輝針城)",
+      "proprietor": "Shinmyoumaru Sukuna",
+      "business_focus": "Inchling Needlework & Miracle Appraisals",
+      "typical_offerings": "Micro-scale embroidery, sewing needle fencing blades, Miracle Mallet wishes (terms and conditions apply).",
+      "ad_tone": "Feisty, miniature revolutionary zeal, promises to overthrow oversized tyranny one stitch at a time."
+    },
+    {
+      "sponsor": "Higan Court Moral Counseling (彼岸 裁判所)",
+      "proprietor": "Eiki Shiki, Yamaxanadu",
+      "business_focus": "Post-Mortem Sin Audits & Karma Consultation",
+      "typical_offerings": "Cleanslate karma confessions, Rod of Remorse behavioral therapy, mirror of truth soul scans.",
+      "ad_tone": "Stern, uncompromising moral lecture, reminds Gensokyo citizens that Hell is very real and very thorough."
     }
   ]
 }
