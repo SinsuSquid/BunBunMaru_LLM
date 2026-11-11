@@ -21,7 +21,7 @@
 
 ---
 
-## 🗞️ TODAY'S LEAD STORY: THE GREAT BLÅHAJ APOCALYPSE (Preview)
+## 🗞️ TODAY'S LEAD STORY: THE GREAT BLÅHAJ APOCALYPSE (PREVIEW)
 
 <p align="center">
   <img src="assets/bunbunmaru_newspaper.png" alt="文々。新聞 號外: The Blue Horror of Gensokyo" width="760" />
