@@ -24,9 +24,9 @@
 ## 🗞️ TODAY'S LEAD STORY: THE GREAT BLÅHAJ APOCALYPSE
 
 <p align="center">
-  <img src="blahaj.jpg" alt="Exhibit A: The Blue Horror of Gensokyo" width="460" />
+  <img src="bunbunmaru_newspaper.png" alt="文々。新聞 號外: The Blue Horror of Gensokyo" width="760" />
   <br>
-  <em><b>EXHIBIT A:</b> Photographic evidence captured by Aya's high-speed crow camera. Notice the abyssal soft shark channeling deep-sea mana directly into modern silicon technology while a cursed vessel of Pepsi Max lurks nearby.</em>
+  <em><b>文々。新聞 號外 (EXTRA):</b> Authentic Bohemian Archive in Japanese Red broadsheet printed automatically via <code>press.py</code>.</em>
 </p>
 
 ### 🦈 BLUE HORROR OF GENSOYKO: THE OCEAN SHRINE HAS INVADED YOUR PRIVATE HOME!
@@ -98,9 +98,23 @@ ollama create bunbunmaru -f Modelfile
 ```
 
 ### 3. Print the Scoop!
-Hand photographic evidence to Aya and let her blow it completely out of proportion:
+Hand photographic evidence to Aya and let the Tengu press blow it completely out of proportion:
 ```bash
-python3 bunbunmaru.py
+# Analyze any image (defaults to blahaj.jpg if omitted)
+python3 bunbunmaru.py path/to/your/evidence.jpg
+```
+
+This single command triggers the full pipeline:
+1. 🪶 Interrogates the image using `bunbunmaru` in Ollama.
+2. 📢 Emits structured tabloid JSON.
+3. 🖨️ Automatically invokes [`press.py`](press.py) to print:
+   - `bunbunmaru_newspaper.html` (interactive web broadsheet)
+   - `bunbunmaru_newspaper.png` (high-res broadsheet clipping)
+   - `bunbunmaru_newspaper.pdf` (print-ready PDF)
+
+Or run the printing press standalone with any image:
+```bash
+python3 press.py blahaj.jpg
 ```
 
 ---
@@ -141,10 +155,12 @@ Every dispatch filed to the Bunbunmaru Printing Press must conform strictly to t
 
 ```
 BunBunMaru_LLM/
-├── Modelfile        # The sacred editorial decrees of Aya Shameimaru
-├── bunbunmaru.py    # Direct hot-wire script to the printing press
-├── blahaj.jpg       # Exhibit A: The Blue Horror of Gensokyo
-└── README.md        # This special extra edition
+├── Modelfile                 # The sacred editorial decrees of Aya Shameimaru
+├── bunbunmaru.py             # Hot-wire reporting pipeline script
+├── press.py                  # Bohemian Archive broadsheet layout & print engine
+├── blahaj.jpg                # Exhibit A: The Blue Horror of Gensokyo
+├── bunbunmaru_newspaper.png  # Rendered sample broadsheet clipping
+└── README.md                 # This special extra edition
 ```
 
 ---
