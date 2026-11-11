@@ -11,16 +11,20 @@ import ollama
 from pressing import render_newspaper
 
 def main():
-    image_path = "assets/blahaj.jpg"
-    if not os.path.exists(image_path) and os.path.exists("blahaj.jpg"):
-        image_path = "blahaj.jpg"
-
     if len(sys.argv) > 1:
         if os.path.exists(sys.argv[1]):
             image_path = sys.argv[1]
         else:
             print(f"❌ Error: Image file '{sys.argv[1]}' not found!")
             sys.exit(1)
+    elif os.path.exists("assets/blahaj.jpg"):
+        image_path = "assets/blahaj.jpg"
+    elif os.path.exists("blahaj.jpg"):
+        image_path = "blahaj.jpg"
+    else:
+        print("📸 No evidence provided!")
+        print("Usage: python3 bunbunmaru.py <path/to/evidence.jpg>")
+        sys.exit(1)
 
     print(f"📸 Scooping evidence from: {image_path}")
     print("🪶 Alerting Aya Shameimaru at the Bunbunmaru Printing Press...")

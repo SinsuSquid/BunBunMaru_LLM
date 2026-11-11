@@ -100,7 +100,7 @@ ollama create bunbunmaru -f Modelfile
 ### 3. Print the Scoop!
 Hand photographic evidence to Aya and let the Tengu press blow it completely out of proportion:
 ```bash
-# Analyze any image (defaults to assets/blahaj.jpg if omitted)
+# Analyze any image
 python3 bunbunmaru.py path/to/your/evidence.jpg
 ```
 
@@ -114,7 +114,7 @@ This single command triggers the full pipeline:
 
 Or run the printing press standalone with any image:
 ```bash
-python3 pressing/press.py assets/blahaj.jpg
+python3 pressing/press.py path/to/your/evidence.jpg
 ```
 
 Or re-harvest the latest Touhou lore from Touhou Wiki anytime:
@@ -170,7 +170,6 @@ BunBunMaru_LLM/
 ├── data/
 │   └── gensokyo_directory.json  # Comprehensive 182-character dossier & commercial sponsors
 ├── assets/
-│   ├── blahaj.jpg               # Exhibit A: The Blue Horror of Gensokyo
 │   └── bunbunmaru_newspaper.png # Rendered sample broadsheet clipping
 ├── bunbunmaru.py                # Hot-wire reporting pipeline script
 ├── Modelfile                    # The sacred editorial decrees of Aya Shameimaru

@@ -2,3 +2,9 @@
 bunbunmaru_newspaper.html
 __pycache__/
 *.pyc
+
+# Local test images
+*.jpg
+*.jpeg
+*.png
+!assets/bunbunmaru_newspaper.png
