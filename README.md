@@ -68,6 +68,20 @@
     "FLOOR SECRECTION CONFIRMED: The shark spirit is sinking the entire floor.",
     "Pepsi Max Incident: Witnesses claim it smells like the ocean when opened.",
     "The laptop is now singing in a language that sounds like a whale choking on glass."
+  ],
+  "classified_ads": [
+    {
+      "title": "◆ Kourindou Curiosities: New Arrival",
+      "body": "Salvaged from the Outside World: A sleek 'Silver Calculating Machine (HP)' and a mysterious bottled elixir labeled 'Pepsi'. Cold to the touch. Inquire within; if shopkeeper is absent, wait out back."
+    },
+    {
+      "title": "◆ Kappa Heavy Industries: Hydro-Jets",
+      "body": "Now undergoing explosive field trials at Genbu Ravine! Fully amphibious design with a detonation risk of only 38%! Every preorder includes a free Tengu-deflecting optical cloak hood!"
+    },
+    {
+      "title": "◆ Hakurei Shrine: Urgent Faith Appeal",
+      "body": "Recent escalations of bizarre incidents are directly caused by your lack of shrine donations! Offerings of 100 Mon or more receive an exclusive 'Purification Rod Blessing Bromide'!"
+    }
   ]
 }
 ```
@@ -106,7 +120,7 @@ python3 bunbunmaru.py path/to/your/evidence.jpg
 
 This single command triggers the full pipeline:
 1. 🪶 Interrogates the image using `bunbunmaru` in Ollama.
-2. 📖 Grounds character reactions and commercial sponsors using `data/gensokyo_directory.json`.
+2. 📖 Grounds character reactions and commercial sponsors using [`data/gensokyo_directory.json`](data/gensokyo_directory.json).
 3. 📢 Emits structured tabloid JSON with custom ads and eyewitness quotes.
 4. 🖨️ Automatically invokes [`pressing/press.py`](pressing/press.py) to print:
    - `bunbunmaru_newspaper.html` (interactive web broadsheet)
