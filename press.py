@@ -1,6 +1,6 @@
 """
 Bunbunmaru Printing Press (文々。新聞 印刷所)
-Renders structured tabloid JSON into authentic Touhou 'Bohemian Archive in Japanese Red' broadsheet pages.
+Renders structured tabloid JSON into authentic Touhou 'Bohemian Archive in Japanese Red' broadsheet pages in English.
 """
 
 import os
@@ -8,16 +8,15 @@ import sys
 import json
 import base64
 import subprocess
-from datetime import datetime
 
 HTML_TEMPLATE = """<!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>文々。新聞 — {headline}</title>
+<title>Bunbunmaru Newspaper — {headline}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800;900&family=Zen+Old+Mincho:wght@700;900&family=Yuji+Boku&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,700&family=Cinzel:wght@700;900&family=Shippori+Mincho:wght@700;900&family=Zen+Old+Mincho:wght@900&display=swap" rel="stylesheet">
 <style>
   * {{
     box-sizing: border-box;
@@ -31,7 +30,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     padding: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Shippori Mincho', 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+    font-family: 'Playfair Display', 'Georgia', serif;
     color: #1a1715;
     -webkit-print-color-adjust: exact;
   }}
@@ -51,7 +50,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px);
     background-size: 20px 20px, 4px 4px;
     border: 3px solid #3c342d;
-    padding: 30px 35px 25px 35px;
+    padding: 28px 32px 22px 32px;
     position: relative;
     overflow: hidden;
   }}
@@ -62,36 +61,38 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     pointer-events: none;
-    box-shadow: inset 0 0 60px rgba(120, 85, 45, 0.18);
+    box-shadow: inset 0 0 50px rgba(120, 85, 45, 0.16);
   }}
 
   /* Top Masthead */
   .masthead {{
     border-bottom: 4px double #2c2520;
     padding-bottom: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     display: grid;
-    grid-template-columns: 200px 1fr 220px;
+    grid-template-columns: 220px 1fr 230px;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
   }}
 
   .masthead-meta-left {{
-    font-size: 13px;
-    line-height: 1.6;
+    font-size: 11.5px;
+    line-height: 1.55;
     border-right: 1px solid #7c6f64;
-    padding-right: 12px;
+    padding-right: 10px;
     color: #3f3630;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }}
 
   .masthead-meta-left .issue-tag {{
     display: inline-block;
     background-color: #b5221d;
     color: #fff;
-    font-weight: 800;
-    padding: 2px 7px;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-weight: 900;
+    padding: 2px 8px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
     margin-bottom: 4px;
   }}
 
@@ -100,29 +101,29 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }}
 
   .masthead-title {{
-    font-family: 'Zen Old Mincho', 'Yuji Boku', serif;
-    font-size: 64px;
+    font-family: 'Zen Old Mincho', 'Shippori Mincho', serif;
+    font-size: 58px;
     font-weight: 900;
-    letter-spacing: 12px;
-    color: #1a1512;
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    letter-spacing: 8px;
+    color: #14100d;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
   }}
 
   .tengu-seal {{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     border: 3px solid #b5221d;
     color: #b5221d;
     font-family: 'Zen Old Mincho', serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1;
     border-radius: 4px;
@@ -132,20 +133,22 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }}
 
   .masthead-subtitle {{
-    font-size: 13px;
-    letter-spacing: 6px;
-    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    font-size: 12.5px;
+    letter-spacing: 4px;
+    font-weight: 900;
     margin-top: 6px;
-    color: #5a4e44;
+    color: #4a3e35;
   }}
 
   .masthead-meta-right {{
-    font-size: 13px;
-    line-height: 1.6;
+    font-size: 11.5px;
+    line-height: 1.55;
     border-left: 1px solid #7c6f64;
-    padding-left: 14px;
+    padding-left: 12px;
     color: #3f3630;
     text-align: right;
+    letter-spacing: 0.5px;
   }}
 
   .masthead-bar {{
@@ -154,44 +157,47 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     border-top: 1px solid #3c342d;
     border-bottom: 2px solid #3c342d;
     padding: 4px 6px;
-    font-size: 12px;
-    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 800;
     color: #4a3e35;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     letter-spacing: 1px;
   }}
 
   /* Headline Banner */
   .headline-section {{
     border-bottom: 3px solid #221c18;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
     margin-bottom: 16px;
   }}
 
   .subdeck-tag {{
     display: inline-block;
     color: #b5221d;
-    font-size: 14px;
-    font-weight: 800;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 900;
     letter-spacing: 2px;
     margin-bottom: 4px;
   }}
 
   .main-headline {{
-    font-family: 'Zen Old Mincho', serif;
-    font-size: 38px;
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
     font-weight: 900;
-    line-height: 1.25;
+    line-height: 1.2;
     color: #14100d;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     margin-bottom: 8px;
   }}
 
   .subdeck-text {{
-    font-size: 19px;
+    font-size: 17.5px;
     font-weight: 700;
-    line-height: 1.4;
-    color: #473930;
+    line-height: 1.35;
+    color: #3f3128;
     border-left: 4px solid #b5221d;
     padding-left: 12px;
     margin-top: 6px;
@@ -203,8 +209,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     grid-template-columns: 460px 1fr;
     gap: 22px;
     border-bottom: 2px solid #2c2520;
-    padding-bottom: 18px;
-    margin-bottom: 18px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
   }}
 
   /* Left: Photo Frame */
@@ -217,7 +223,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     border: 3px solid #2c2520;
     padding: 6px;
     background-color: #fff;
-    box-shadow: 2px 3px 8px rgba(0,0,0,0.2);
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.18);
   }}
 
   .photo-frame img {{
@@ -231,8 +237,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   .photo-caption {{
     margin-top: 8px;
-    font-size: 12.5px;
-    line-height: 1.55;
+    font-size: 12px;
+    line-height: 1.5;
     color: #3b312a;
     background-color: #ede4d2;
     padding: 8px 10px;
@@ -240,8 +246,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }}
 
   .photo-credit {{
-    font-weight: 800;
+    font-weight: 900;
     color: #b5221d;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     margin-bottom: 3px;
   }}
 
@@ -256,67 +265,70 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     background-color: rgba(181, 34, 29, 0.06);
     border: 1px solid #d8b8b6;
     border-left: 5px solid #b5221d;
-    padding: 12px 14px;
-    font-size: 15px;
-    line-height: 1.7;
+    padding: 11px 13px;
+    font-size: 14px;
+    line-height: 1.6;
     font-weight: 700;
     color: #1e1814;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }}
 
   .body-text {{
     column-count: 2;
-    column-gap: 18px;
+    column-gap: 16px;
     column-rule: 1px dashed #aa9d8e;
-    font-size: 13.5px;
-    line-height: 1.85;
+    font-size: 13px;
+    line-height: 1.75;
     text-align: justify;
     color: #26201b;
   }}
 
   .body-text p {{
-    margin-bottom: 10px;
-    text-indent: 1em;
+    margin-bottom: 8px;
+    text-indent: 1.2em;
   }}
 
   .body-text p:first-of-type::first-letter {{
-    font-size: 26px;
+    font-size: 28px;
     float: left;
-    line-height: 1;
+    line-height: 0.95;
     font-weight: 900;
     color: #b5221d;
     padding-right: 5px;
     padding-top: 2px;
+    font-family: 'Playfair Display', serif;
   }}
 
   /* Flash Bulletins Ticker */
   .bulletin-box {{
-    margin-top: 14px;
+    margin-top: 12px;
     background-color: #2c2520;
     color: #f6f0e2;
-    padding: 10px 14px;
+    padding: 9px 12px;
     border-radius: 2px;
   }}
 
   .bulletin-header {{
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    font-size: 11.5px;
+    letter-spacing: 1.5px;
     font-weight: 900;
     color: #f1b347;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     gap: 6px;
+    text-transform: uppercase;
   }}
 
   .bulletin-list {{
     list-style: none;
-    font-size: 12px;
-    line-height: 1.6;
+    font-size: 11.5px;
+    line-height: 1.55;
   }}
 
   .bulletin-list li {{
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     padding-left: 14px;
     position: relative;
   }}
@@ -326,60 +338,63 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     position: absolute;
     left: 0;
     color: #b5221d;
-    font-size: 10px;
+    font-size: 9px;
   }}
 
   /* Lower Half: Interview Corner */
   .interview-section {{
     border: 2px solid #2c2520;
     background-color: #eee6d4;
-    padding: 14px 18px;
-    margin-bottom: 18px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
     position: relative;
   }}
 
   .interview-badge {{
     position: absolute;
-    top: -12px;
+    top: -11px;
     left: 20px;
     background-color: #2c2520;
     color: #f6f0e2;
-    font-size: 12px;
-    font-weight: 800;
-    padding: 2px 12px;
-    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 2px 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
   }}
 
   .interview-grid {{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 14px;
     margin-top: 4px;
   }}
 
   .quote-card {{
     background-color: #faf6ed;
     border: 1px solid #c9bda9;
-    padding: 10px 12px;
-    font-size: 13px;
-    line-height: 1.65;
+    padding: 9px 12px;
+    font-size: 12.5px;
+    line-height: 1.55;
   }}
 
   .quote-speaker {{
-    font-weight: 800;
+    font-weight: 900;
     color: #b5221d;
     border-bottom: 1px solid #d8cdba;
-    padding-bottom: 4px;
-    margin-bottom: 6px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 12px;
   }}
 
   .quote-speaker-role {{
-    font-size: 11px;
+    font-size: 10px;
     color: #6c5f54;
-    font-weight: normal;
+    font-weight: 700;
+    text-transform: uppercase;
   }}
 
   .quote-body {{
@@ -400,29 +415,32 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     border: 1px solid #9c8e7e;
     padding: 8px 10px;
     background-color: #ede4d1;
-    font-size: 11px;
+    font-size: 10.5px;
     line-height: 1.45;
     color: #42372f;
   }}
 
   .ad-title {{
+    font-family: 'Cinzel', serif;
     font-weight: 900;
     color: #1a1512;
     border-bottom: 1px dotted #887867;
     padding-bottom: 2px;
     margin-bottom: 4px;
     letter-spacing: 1px;
+    font-size: 11px;
   }}
 
   /* Printing Footer */
   .newspaper-footer {{
-    margin-top: 14px;
-    padding-top: 8px;
+    margin-top: 12px;
+    padding-top: 6px;
     border-top: 1px solid #5a4e44;
     display: flex;
     justify-content: space-between;
-    font-size: 11px;
+    font-size: 10.5px;
     color: #6c5f54;
+    letter-spacing: 0.5px;
   }}
 </style>
 </head>
@@ -433,35 +451,35 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <!-- Masthead -->
   <header class="masthead">
     <div class="masthead-meta-left">
-      <span class="issue-tag">號外 / EXTRA</span><br>
-      <strong>第百三十九季 (Season 139)</strong><br>
-      妖怪の山 天狗総本山 報道局<br>
-      天候: 局所的暴風雨注意報
+      <span class="issue-tag">SPECIAL EXTRA</span><br>
+      <strong>SEASON 139 (GENSOKYO ERA)</strong><br>
+      Youkai Mountain Bureau<br>
+      Weather: Gale Advisory (Tengu Flight)
     </div>
     <div class="masthead-center">
       <div class="masthead-title">
         <span>文々。新聞</span>
         <div class="tengu-seal">文</div>
       </div>
-      <div class="masthead-subtitle">BUNBUNMARU SHINBUN — THE FASTEST SCOOP IN GENSOKYO</div>
+      <div class="masthead-subtitle">BUNBUNMARU NEWSPAPER — FASTEST SCOOP IN GENSOKYO</div>
     </div>
-    <div class="masthead-right masthead-meta-right">
-      <strong>主筆・写真: 射命丸 文</strong><br>
-      定価: 百文 (交渉不可)<br>
-      発行部数: 一千万部突破<br>
-      真実より速さとセンセーション！
+    <div class="masthead-meta-right">
+      <strong>Editor & Photo: Aya Shameimaru</strong><br>
+      Price: 100 Mon (Non-negotiable)<br>
+      Circulation: Over 10,000,000 Copies<br>
+      Speed & Sensationalism Over Truth!
     </div>
   </header>
 
   <div class="masthead-bar">
-    <span>【東方文花帖 號外緊急報道】</span>
-    <span>GENSOKYO EMERGENCY BROADCAST SYSTEM</span>
-    <span>記事捏造疑惑全面否定版</span>
+    <span>【TOUHOU TABLOID EMERGENCY REPORT】</span>
+    <span>GENSOKYO EMERGENCY BROADCAST WIRE</span>
+    <span>ALL FABRICATION CLAIMS STRICTLY DENIED</span>
   </div>
 
   <!-- Headlines -->
   <section class="headline-section">
-    <span class="subdeck-tag">【特報・異変勃発！？】</span>
+    <span class="subdeck-tag">【BREAKING: CATASTROPHIC INCIDENT DECLARED】</span>
     <h1 class="main-headline">{headline}</h1>
     <div class="subdeck-text">{subdeck}</div>
   </section>
@@ -471,11 +489,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <!-- Left Photo Column -->
     <div class="photo-column">
       <div class="photo-frame">
-        <img src="{image_data_uri}" alt="現場決定的証拠写真">
+        <img src="{image_data_uri}" alt="Decisive Crime Scene Evidence Photo">
       </div>
       <div class="photo-caption">
-        <div class="photo-credit">▲ 撮影協力: 被害者各位 / 撮影: 射命丸 文</div>
-        <strong>【現場証拠写真】</strong> 鴉天狗の超望遠魔眼レンズが捉えた決定的瞬間。外世界の未知なる遺物か、あるいは山奥で秘密裏に進む邪悪な禁呪実験の痕跡か。
+        <div class="photo-credit">▲ Shooting Cooperation: Unwitting Bystanders / Photo: Aya Shameimaru</div>
+        <strong>[EXHIBIT A: CRIME SCENE EVIDENCE]</strong> Captured decisively through the Crow Tengu's ultra-telephoto clairvoyance lens. Is it a forbidden relic from the Outside World, or unmistakable traces of dark spellcard sorcery brewing in the mountains?
       </div>
     </div>
 
@@ -487,11 +505,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
       <div class="body-text">
         <p>{body_paragraph}</p>
-        <p>山麓の河童技術者集団はこの件について口を閉ざしており、博麗神社においては賽銭箱の重量不足に起因する神気低下の関与も噂されている。筆者が直ちに上空から追跡を試みたところ、奇妙な思念波が観測された。</p>
+        <p>The Kappa engineering collective at the foot of the mountain has strictly refused to comment on this development, while whispers around the Hakurei Shrine suggest an alarming drop in spiritual wards directly tied to chronic donation deficits. Crow scouts attempting high-altitude reconnaissance reported intense, chaotic psychic resonances echoing across the vicinity.</p>
       </div>
 
       <div class="bulletin-box">
-        <div class="bulletin-header">⚡ 文々。速報電波フラッシュ</div>
+        <div class="bulletin-header">⚡ Bunbunmaru Flash Rumor Wire</div>
         <ul class="bulletin-list">
           {bulletins_html}
         </ul>
@@ -501,7 +519,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Interview Section -->
   <section class="interview-section">
-    <div class="interview-badge">【関係者緊急直撃インタビュー】</div>
+    <div class="interview-badge">【Emergency Eyewitness Ambush Interview】</div>
     <div class="interview-grid">
       {quotes_html}
     </div>
@@ -510,23 +528,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <!-- Bottom Classifieds -->
   <footer class="ads-section">
     <div class="ad-box">
-      <div class="ad-title">◆ 香霖堂 (Kourindou) 新入荷</div>
-      外世界より漂着した「ぎんいろの電子計算機(HP)」及び謎の炭酸飲料「ペプシ」。触ると冷たい。価格要応談。店主不在時は裏庭へ。
+      <div class="ad-title">◆ Kourindou Curiosities: New Arrival</div>
+      Salvaged from the Outside World: A sleek 'Silver Calculating Machine (HP)' and a mysterious bottled elixir labeled 'Pepsi'. Cold to the touch. Inquire within; if shopkeeper is absent, wait out back.
     </div>
     <div class="ad-box">
-      <div class="ad-title">◆ 河童重工 水流ジェット推進器</div>
-      玄武の沢にて大好評実験中！水陸両用・爆発確率わずか38%。今なら天狗除けの光学迷彩フードをもれなく進呈！
+      <div class="ad-title">◆ Kappa Heavy Industries: Hydro-Jets</div>
+      Now undergoing explosive field trials at Genbu Ravine! Fully amphibious design with a detonation risk of only 38%! Every preorder includes a free Tengu-deflecting optical cloak hood!
     </div>
     <div class="ad-box">
-      <div class="ad-title">◆ 博麗神社 賽銭大募集中</div>
-      最近の異変多発は皆様の信心不足が原因です。百文以上の喜捨で特製「安全祈願・お祓い棒ブロマイド」進呈中。
+      <div class="ad-title">◆ Hakurei Shrine: Urgent Faith Appeal</div>
+      Recent escalations of bizarre incidents are directly caused by your lack of shrine donations! Offerings of 100 Mon or more receive an exclusive 'Purification Rod Blessing Bromide'!
     </div>
   </footer>
 
   <div class="newspaper-footer">
-    <span>発行所: 妖怪の山 文々。新聞社印刷工場</span>
-    <span>※本紙に掲載された記事・写真の無断転載および抗議は風神少女の突風により一切受け付けません。</span>
-    <span>文花帖 号外規格</span>
+    <span>Published by: Youkai Mountain Bunbunmaru Printing Press</span>
+    <span>* All rights reserved. Complaints, retractions, and slander lawsuits will be blown away by local gale gusts.</span>
+    <span>Bohemian Archive Spec</span>
   </div>
 
 </div>
@@ -550,7 +568,7 @@ def render_newspaper(
     output_png_path: str = "bunbunmaru_newspaper.png",
     export_images: bool = True
 ):
-    """Render structured story JSON + image into authentic Bunbunmaru newspaper."""
+    """Render structured story JSON + image into authentic Bunbunmaru newspaper in English."""
     headline = json_data.get("headline", "GENSOKYO EMERGENCY SCOOP!")
     subdeck = json_data.get("subdeck", "Unverified Scandal Shakes the Human Village!")
     lead_paragraph = json_data.get("lead_paragraph", "")
@@ -560,15 +578,15 @@ def render_newspaper(
     quotes_list = json_data.get("eyewitness_quotes", [])
     quotes_html_parts = []
     for q in quotes_list:
-        name = q.get("name", "通行人")
-        quote = q.get("quote", "ノーコメントよ！")
+        name = q.get("name", "Bystander")
+        quote = q.get("quote", "No comment! Get lost!")
         quotes_html_parts.append(f"""
         <div class="quote-card">
           <div class="quote-speaker">
             <span>{name}</span>
-            <span class="quote-speaker-role">証言者</span>
+            <span class="quote-speaker-role">Eyewitness</span>
           </div>
-          <div class="quote-body">「{quote}」</div>
+          <div class="quote-body">"{quote}"</div>
         </div>
         """)
     quotes_html = "\n".join(quotes_html_parts)
@@ -598,7 +616,7 @@ def render_newspaper(
         f.write(html_content)
     print(f"✅ Generated Newspaper HTML: {output_html_path}")
 
-    # Use headless Chrome to take high-res screenshot and PDF if available
+    # Use headless Chrome to take high-res screenshot
     if export_images:
         chrome_bin = "/usr/bin/google-chrome"
         if os.path.exists(chrome_bin):
@@ -606,7 +624,6 @@ def render_newspaper(
             abs_png_path = os.path.abspath(output_png_path)
 
             print("🖨️ Running Bunbunmaru Printing Press via Headless Chrome...")
-            # Screenshot
             cmd_png = [
                 chrome_bin,
                 "--headless",
