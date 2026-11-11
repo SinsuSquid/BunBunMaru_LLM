@@ -568,7 +568,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <div class="newspaper-footer">
     <span>Published by: Youkai Mountain Bunbunmaru Printing Press</span>
     <span>* All rights reserved. Complaints, retractions, and slander lawsuits will be blown away by local gale gusts.</span>
-    <span>Bohemian Archive Spec</span>
   </div>
 
 </div>
