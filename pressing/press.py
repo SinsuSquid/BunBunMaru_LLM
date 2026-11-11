@@ -496,8 +496,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </header>
 
   <div class="masthead-bar">
-    <span>【TOUHOU TABLOID EMERGENCY REPORT】</span>
-    <span>GENSOKYO EMERGENCY BROADCAST WIRE</span>
+    <span>【BOHEMIAN ARCHIVE SPECIAL DISPATCH】</span>
+    <span>THE FASTEST TRUTH IN THE LAND OF ILLUSION</span>
     <span>ALL FABRICATION CLAIMS STRICTLY DENIED</span>
   </div>
 
