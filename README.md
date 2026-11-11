@@ -23,7 +23,30 @@
 
 ## 🗞️ TODAY'S LEAD STORY: THE GREAT BLÅHAJ APOCALYPSE
 
-*(Live wire copy intercepted directly from `bunbunmaru.py` processing [`blahaj.jpg`](blahaj.jpg))*
+<p align="center">
+  <img src="blahaj.jpg" alt="Exhibit A: The Blue Horror of Gensokyo" width="460" />
+  <br>
+  <em><b>EXHIBIT A:</b> Photographic evidence captured by Aya's high-speed crow camera. Notice the abyssal soft shark channeling deep-sea mana directly into modern silicon technology while a cursed vessel of Pepsi Max lurks nearby.</em>
+</p>
+
+### 🦈 BLUE HORROR OF GENSOYKO: THE OCEAN SHRINE HAS INVADED YOUR PRIVATE HOME!
+#### *A MYSTERIOUS Y-SHIRT BEING REVEALS A FULL-BRED SHARK BEHEMOTH IN SILVER TECH GEAR!*
+
+> **GENSOKYO / HAKAI DOMAIN** — Breaking news straight from the Hakai Domain! What started as a simple, routine work session has rapidly spiralled into a catastrophe of the highest order. Witnesses describe a figure wearing the sacred purple fabric adorned with mystical Y-character runes emerging from... well, emerging *as* the Great Blue Gengorobo spirit. They are actively engaging with silicon-based technology, and the local Pepsi supply has reportedly been tainted.
+>
+> The evidence of the shark spirit manifesting is undeniable. The shark plushie over the skull is no longer a mere garment but a cursed spiritual barrier channeling deep-sea mana directly into the laptop. The dark soda bottle placed adjacent to the HP unit is confirmed as an ancient vessel of Pessimistic Essence, necessary for casting spells of water destruction in the age of modern computing.
+
+#### 🎙️ Eyewitness Interrogations:
+- 🧊 **Cirno (Self-Proclaimed Strongest)**: *"Well, it’s definitely shark-shaped! But I hate you guys being here in the house."*
+- 🔮 **Yuki Nana (Allegedly)**: *"My 'Y' symbol shirt is glowing too bright... what happened to my dignity? It looks like a real monster wearing me. Stop it. Just stop typing the spell, you idiot."*
+
+#### ⚡ Bunbunmaru Flash Bulletins:
+- 🌊 **FLOOR SECRECTION CONFIRMED:** The shark spirit is sinking the entire floor.
+- 🥤 **Pepsi Max Incident:** Witnesses claim it smells like the ocean when opened.
+- 💻 The laptop is now singing in a language that sounds like a whale choking on glass.
+
+<details>
+<summary><b>📄 Click to Inspect Raw Telegraph Wire Dispatch (JSON Output)</b></summary>
 
 ```json
 {
@@ -48,6 +71,8 @@
   ]
 }
 ```
+
+</details>
 
 ---
 
