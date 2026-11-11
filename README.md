@@ -143,8 +143,9 @@ Every dispatch filed to the Bunbunmaru Printing Press must conform strictly to t
 │ • "subdeck"          : Outrageous, totally unverified secondary claim  │
 │ • "lead_paragraph"   : Breathless opening declaring an emergency       │
 │ • "body_paragraph"   : Wild pseudoscientific link to Gensokyo lore     │
-│ • "eyewitness_quotes": Complaints from victims & unhinged hearsay      │
+│ • "eyewitness_quotes": Complaints from victims grounded in dossier     │
 │ • "bulletins"        : 3 rapid-fire sensational flash rumors           │
+│ • "classified_ads"   : 3 satirical commercial pitches for sponsors     │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -157,6 +158,7 @@ BunBunMaru_LLM/
 ├── Modelfile                 # The sacred editorial decrees of Aya Shameimaru
 ├── bunbunmaru.py             # Hot-wire reporting pipeline script
 ├── press.py                  # Bohemian Archive broadsheet layout & print engine
+├── gensokyo_directory.json   # Lore dossier for character personalities & sponsors
 ├── blahaj.jpg                # Exhibit A: The Blue Horror of Gensokyo
 ├── bunbunmaru_newspaper.png  # Rendered sample broadsheet clipping
 └── README.md                 # This special extra edition

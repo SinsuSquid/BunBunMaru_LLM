@@ -1,0 +1,133 @@
+{
+  "_comment": "Gensokyo Directory & Personality Dossier for the Bunbunmaru Newspaper (文々。新聞). The model consults this dossier to ground eyewitness quotes and commercial classifieds in canonical Touhou lore.",
+  "interviewees": [
+    {
+      "name": "Reimu Hakurei (博麗 霊夢)",
+      "role": "Hakurei Shrine Maiden / Incident Resolver",
+      "personality": "Lazy, perpetually broke, easily irritated, deeply suspicious of reporters. Values tea, naps, and donations above all else.",
+      "attitude_towards_aya": "Extremely hostile. Constantly threatens to seal or exterminate Aya for shoving cameras in her face without dropping 500 yen in the offering box.",
+      "speech_style": "Blunt, cynical, uncooperative, demanding money for interviews."
+    },
+    {
+      "name": "Marisa Kirisame (霧雨 魔理沙)",
+      "role": "Ordinary Magician of the Forest of Magic",
+      "personality": "Enthusiastic, bold, kleptomaniac (she 'borrows until she dies'), loves high-powered explosions and lasers.",
+      "attitude_towards_aya": "Playful but guarded. Always brags about discovering things first and asks if Aya caught her good side.",
+      "speech_style": "Energetic tomboy, ends sentences with casual confidence, brags about Master Spark."
+    },
+    {
+      "name": "Cirno (チルノ)",
+      "role": "Ice Fairy of the Misty Lake / Self-Proclaimed Strongest (⑨)",
+      "personality": "Childish, boastful, completely gullible, has zero reading comprehension, claims she is the absolute strongest being in Gensokyo.",
+      "attitude_towards_aya": "Tries to show off, misunderstands Aya's complex vocabulary, insists she can freeze whatever incident is happening.",
+      "speech_style": "Boastful, loud, simple-minded, claims everything is easy for the strongest."
+    },
+    {
+      "name": "Sanae Kochiya (東風谷 早苗)",
+      "role": "Moriya Shrine Wind Priestess / Outside World Transplant",
+      "personality": "Optimistic, earnest, slightly unhinged in her quest to gather faith. Still references Outside World mecha anime and pop culture.",
+      "attitude_towards_aya": "Friendly and eager for PR coverage to promote the Moriya Shrine, but gets overly preachy about miracles.",
+      "speech_style": "Polite modern schoolgirl cadence, blends shrine priestess duties with geeky sci-fi references."
+    },
+    {
+      "name": "Nitori Kawashiro (河城 にとり)",
+      "role": "Kappa Heavy Industries Engineer & Business Head",
+      "personality": "Pragmatic, secretive, tech-obsessed engineer who loves cucumbers, optical camouflage, and money. Explains anomalies with absurd pseudoscientific kappa mechanics.",
+      "attitude_towards_aya": "Transactional. Won't speak without being paid or granted free advertising space. Denies all rumors of design defects.",
+      "speech_style": "Fast-talking technical jargon, salesman-like, defensive about explosions."
+    },
+    {
+      "name": "Sakuya Izayoi (十六夜 咲夜)",
+      "role": "Head Maid of the Scarlet Devil Mansion",
+      "personality": "Impeccably elegant, composed, time-manipulating perfectionist. Coldly ruthless against anyone who disturbs Lady Remilia.",
+      "attitude_towards_aya": "Icy and formal. Answers while subtly polishing silver throwing knives to remind Aya she can stop time at any moment.",
+      "speech_style": "Aristocratic butler cadence, polite threats, utterly devoted to Remilia."
+    },
+    {
+      "name": "Remilia Scarlet (レミリア・スカーレット)",
+      "role": "Vampire Mistress of the Scarlet Devil Mansion",
+      "personality": "Charismatically arrogant, theatrical, secretly childish, claims to manipulate fate and that everything is part of her grand crimson design.",
+      "attitude_towards_aya": "Smug and amused. Treats the interview like an imperial audience, demanding dramatic prose in the morning edition.",
+      "speech_style": "Haughty, theatrical, dramatic noble vampire cadence."
+    },
+    {
+      "name": "Flandre Scarlet (フランドール・スカーレット)",
+      "role": "Diabolical Vampire Princess in the Basement",
+      "personality": "Unstable, cheerfully terrifying, incredibly destructive. Has the power to destroy anything by clenching her fist.",
+      "attitude_towards_aya": "Innocently creepy. Asks Aya if she can squeeze the reporter's camera until it goes 'boom'.",
+      "speech_style": "Playful child-like voice laced with catastrophic destructive intent."
+    },
+    {
+      "name": "Rinnosuke Morichika (森近 霖之助)",
+      "role": "Proprietor of the Kourindou Curiosity Shop",
+      "personality": "Pedantic, intellectual hoarder, philosophical. Has the power to know the name and purpose of Outside World items, but zero idea how to actually operate them.",
+      "attitude_towards_aya": "Long-winded lecture mode. Gives absurd, overly complex theories that are 100% wrong.",
+      "speech_style": "Verbose, scholarly, self-important, pauses thoughtfully."
+    },
+    {
+      "name": "Reisen Udongein Inaba (鈴仙・優曇華院・イナバ)",
+      "role": "Moon Rabbit & Eientei Pharmacy Dispenser",
+      "personality": "Neurotic, stressed, overworked, easily bullied by Eirin and Tewi. Desperately tries to prevent pharmaceutical scandals.",
+      "attitude_towards_aya": "Paranoid. Thinks Aya is conducting an FDA-style inspection into Eientei's unverified drugs.",
+      "speech_style": "Anxious, apologetic, trying to hide suspicious medicine bottles."
+    },
+    {
+      "name": "Youmu Konpaku (魂魄 妖夢)",
+      "role": "Half-Phantom Gardener & Swordswoman of Hakugyokurou",
+      "personality": "Earnest, easily startled, terrified of ghost stories despite being half-phantom. Extremely loyal to Lady Yuyuko.",
+      "attitude_towards_aya": "Tense and formal. Threatens to cut Aya's questions in half with Roukanken if she suspects disrespect.",
+      "speech_style": "Disciplined samurai apprentice, nervous under pressure."
+    },
+    {
+      "name": "Yuyuko Saigyouji (西行寺 幽々子)",
+      "role": "Ghost Mistress of the Netherworld",
+      "personality": "Whimsical, carefree, enigmatic, and endlessly hungry. Her mind always drifts toward snacks and dining.",
+      "attitude_towards_aya": "Teasing. Completely ignores the incident and asks Aya if the object in the photo can be boiled or grilled.",
+      "speech_style": "Dreamy, poetic, playful, food-obsessed."
+    }
+  ],
+  "advertisers": [
+    {
+      "sponsor": "Kourindou (香霖堂)",
+      "proprietor": "Rinnosuke Morichika",
+      "business_focus": "Outside World Salvage & High-Priced Relics",
+      "typical_offerings": "Mysterious glass bricks (smartphones), silver calculation slabs (laptops), plastic cylinders with black carbonated liquid (Pepsi), mechanical clocks.",
+      "ad_tone": "Scholarly, enigmatic, exorbitant pricing, mentions that proprietor may be reading in the back if shop appears deserted."
+    },
+    {
+      "sponsor": "Kappa Heavy Industries (河童重工)",
+      "proprietor": "Nitori Kawashiro & Engineering Guild",
+      "business_focus": "Aquatic Machinery, Hydro-Jets & Experimental Weaponry",
+      "typical_offerings": "Amphibious jetpacks, camouflage cloaks, waterproof drill-arms, automatic cucumber peelers.",
+      "ad_tone": "Aggressive startup tech pitch, boasts low explosion odds (e.g. 'only 35% detonation risk!'), offers free bonus gadgets."
+    },
+    {
+      "sponsor": "Hakurei Shrine (博麗神社)",
+      "proprietor": "Reimu Hakurei",
+      "business_focus": "Religious Services, Amulets & Desperate Faith Campaigns",
+      "typical_offerings": "Exorcisms (50% off if paid in advance), lucky purification rod bromides, sacred spring water (tap water), donation box upgrades.",
+      "ad_tone": "Aggressive guilt-tripping, blames current incidents on lack of donations, promises divine retribution to non-donors."
+    },
+    {
+      "sponsor": "Moriya Shrine Faith & Tech Co. (守矢神社)",
+      "proprietor": "Kanako Yasaka & Sanae Kochiya",
+      "business_focus": "Modernized Faith, Nuclear Power & Mountain Tourism",
+      "typical_offerings": "Ropeway aerial cable car tickets, miracle-infused energy drinks, clean geothermal power subscriptions, modern prayer apps.",
+      "ad_tone": "Corporate corporate-speak, aggressive business expansion, guarantees tangible miracles with every contract."
+    },
+    {
+      "sponsor": "Eientei Pharmacy (永遠亭 薬局)",
+      "proprietor": "Eirin Yagokoro & Reisen Udongein Inaba",
+      "business_focus": "Lunar Medicine & Miraculous Elixirs",
+      "typical_offerings": "Ultra-vitality stamina draughts, sleepless night study drops, rabbit-ear soothing lotion, unapproved memory-erasing balms.",
+      "ad_tone": "Clinical yet slightly menacing, reminds customers that side effects may include spiritual distortion or lunar madness."
+    },
+    {
+      "sponsor": "Scarlet Devil Mansion Catering & Salon (紅魔館)",
+      "proprietor": "Remilia Scarlet & Sakuya Izayoi",
+      "business_focus": "Aristocratic Hospitality & Vampire Banquets",
+      "typical_offerings": "Crimson black tea sets, private ballroom reservations, fine silverware appraisals, daytime parasol fittings.",
+      "ad_tone": "Extravagant gothic aristocracy, subtly reminds patrons that uninvited gate-crashers will be disciplined by the gatekeeper."
+    }
+  ]
+}

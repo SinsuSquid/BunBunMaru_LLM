@@ -22,13 +22,29 @@ def main():
     print(f"📸 Scooping evidence from: {image_path}")
     print("🪶 Alerting Aya Shameimaru at the Bunbunmaru Printing Press...")
 
+    # Load Gensokyo Directory Dossier if present
+    prompt_content = "Break this story right now!"
+    dir_path = "gensokyo_directory.json"
+    if os.path.exists(dir_path):
+        try:
+            with open(dir_path, "r", encoding="utf-8") as f:
+                dossier = json.load(f)
+            prompt_content += (
+                "\n\n[MANDATORY GENSOKYO DOSSIER]\n"
+                "Ground your eyewitnesses and classified ads using this directory of characters and sponsors:\n"
+                + json.dumps(dossier, ensure_ascii=False)
+            )
+            print("📖 Loaded Gensokyo personnel & sponsor directory.")
+        except Exception as e:
+            print(f"⚠️ Could not load directory: {e}")
+
     response = ollama.chat(
         model="bunbunmaru",
         format="json",
         messages=[
             {
                 "role": "user",
-                "content": "Break this story right now!",
+                "content": prompt_content,
                 "images": [image_path],
             }
         ],

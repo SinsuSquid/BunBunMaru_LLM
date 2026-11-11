@@ -37,6 +37,20 @@ JSON Output Schema:
     "Short scandalous flash news bulletin 1",
     "Short scandalous flash news bulletin 2",
     "Short scandalous flash news bulletin 3"
+  ],
+  "classified_ads": [
+    {
+      "title": "Ad header 1 (e.g. ◆ Kourindou Curiosities: New Arrival)",
+      "body": "Humorous commercial pitch in character for a Gensokyo sponsor (e.g. Kourindou, Kappa Heavy Industries, Hakurei Shrine, Moriya Shrine, Eientei, Scarlet Devil Mansion)."
+    },
+    {
+      "title": "Ad header 2 (e.g. ◆ Kappa Heavy Industries: Hydro-Jets)",
+      "body": "Second hilarious commercial pitch in character."
+    },
+    {
+      "title": "Ad header 3 (e.g. ◆ Hakurei Shrine: Urgent Faith Appeal)",
+      "body": "Third hilarious commercial pitch in character."
+    }
   ]
 }
 """

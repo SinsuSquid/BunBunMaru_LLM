@@ -551,18 +551,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Bottom Classifieds -->
   <footer class="ads-section">
-    <div class="ad-box">
-      <div class="ad-title">◆ Kourindou Curiosities: New Arrival</div>
-      Salvaged from the Outside World: A sleek 'Silver Calculating Machine (HP)' and a mysterious bottled elixir labeled 'Pepsi'. Cold to the touch. Inquire within; if shopkeeper is absent, wait out back.
-    </div>
-    <div class="ad-box">
-      <div class="ad-title">◆ Kappa Heavy Industries: Hydro-Jets</div>
-      Now undergoing explosive field trials at Genbu Ravine! Fully amphibious design with a detonation risk of only 38%! Every preorder includes a free Tengu-deflecting optical cloak hood!
-    </div>
-    <div class="ad-box">
-      <div class="ad-title">◆ Hakurei Shrine: Urgent Faith Appeal</div>
-      Recent escalations of bizarre incidents are directly caused by your lack of shrine donations! Offerings of 100 Mon or more receive an exclusive 'Purification Rod Blessing Bromide'!
-    </div>
+    {ads_html}
   </footer>
 
   <div class="newspaper-footer">
@@ -621,6 +610,36 @@ def render_newspaper(
         bulletins_html_parts.append(f"<li>{b}</li>")
     bulletins_html = "\n".join(bulletins_html_parts)
 
+    # Build ads HTML (from model JSON or canonical defaults)
+    ads_list = json_data.get("classified_ads", [])
+    if not ads_list:
+        ads_list = [
+            {
+                "title": "◆ Kourindou Curiosities: New Arrival",
+                "body": "Salvaged from the Outside World: A sleek 'Silver Calculating Machine (HP)' and a mysterious bottled elixir labeled 'Pepsi'. Cold to the touch. Inquire within; if shopkeeper is absent, wait out back."
+            },
+            {
+                "title": "◆ Kappa Heavy Industries: Hydro-Jets",
+                "body": "Now undergoing explosive field trials at Genbu Ravine! Fully amphibious design with a detonation risk of only 38%! Every preorder includes a free Tengu-deflecting optical cloak hood!"
+            },
+            {
+                "title": "◆ Hakurei Shrine: Urgent Faith Appeal",
+                "body": "Recent escalations of bizarre incidents are directly caused by your lack of shrine donations! Offerings of 100 Mon or more receive an exclusive 'Purification Rod Blessing Bromide'!"
+            }
+        ]
+
+    ads_html_parts = []
+    for ad in ads_list[:3]:
+        title = ad.get("title", "◆ Commercial Notice")
+        body = ad.get("body", "")
+        ads_html_parts.append(f"""
+        <div class="ad-box">
+          <div class="ad-title">{title}</div>
+          {body}
+        </div>
+        """)
+    ads_html = "\n".join(ads_html_parts)
+
     # Convert photo to Data URI for fully standalone HTML
     image_data_uri = image_to_base64_data_uri(image_path)
 
@@ -633,6 +652,7 @@ def render_newspaper(
         image_data_uri=image_data_uri,
         quotes_html=quotes_html,
         bulletins_html=bulletins_html,
+        ads_html=ads_html,
     )
 
     with open(output_html_path, "w", encoding="utf-8") as f:
