@@ -43,7 +43,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   /* The physical newspaper broadsheet sheet */
   .newspaper {{
     width: 1050px;
-    min-height: 1450px;
     background-color: #f6f0e2;
     background-image: 
       radial-gradient(#e5dbcb 1px, transparent 1px),
@@ -70,23 +69,27 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     padding-bottom: 12px;
     margin-bottom: 14px;
     display: grid;
-    grid-template-columns: 220px 1fr 230px;
-    align-items: center;
+    grid-template-columns: 235px 1fr 235px;
+    align-items: stretch;
     gap: 12px;
   }}
 
   .masthead-meta-left {{
-    font-size: 11.5px;
+    font-size: 11px;
     line-height: 1.55;
     border-right: 1px solid #7c6f64;
-    padding-right: 10px;
+    padding-right: 12px;
     color: #3f3630;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }}
 
   .masthead-meta-left .issue-tag {{
     display: inline-block;
+    align-self: flex-start;
     background-color: #b5221d;
     color: #fff;
     font-weight: 900;
@@ -97,6 +100,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }}
 
   .masthead-center {{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }}
 
@@ -112,6 +119,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     align-items: center;
     justify-content: center;
     gap: 12px;
+    margin-left: 8px;
   }}
 
   .tengu-seal {{
@@ -134,7 +142,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   .masthead-subtitle {{
     font-family: 'Cinzel', serif;
-    font-size: 12.5px;
+    font-size: 12px;
     letter-spacing: 4px;
     font-weight: 900;
     margin-top: 6px;
@@ -142,13 +150,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }}
 
   .masthead-meta-right {{
-    font-size: 11.5px;
+    font-size: 11px;
     line-height: 1.55;
     border-left: 1px solid #7c6f64;
     padding-left: 12px;
     color: #3f3630;
     text-align: right;
     letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }}
 
   .masthead-bar {{
@@ -629,12 +640,28 @@ def render_newspaper(
                 "--headless",
                 "--disable-gpu",
                 "--hide-scrollbars",
-                "--window-size=1050,1480",
+                "--window-size=1050,1600",
                 f"--screenshot={abs_png_path}",
                 f"file://{abs_html_path}",
             ]
             res_png = subprocess.run(cmd_png, capture_output=True, text=True)
             if res_png.returncode == 0 and os.path.exists(abs_png_path):
+                # Auto-crop cleanly to the exact bottom border of the newspaper
+                try:
+                    from PIL import Image
+                    import numpy as np
+                    im = Image.open(abs_png_path)
+                    arr = np.array(im)
+                    # Find bottom border: dark row of 3px solid #3c342d border
+                    for y in range(im.height - 1, 100, -1):
+                        row = arr[y, 100:950, :3]
+                        if (row < 80).all(axis=-1).mean() > 0.7:
+                            cropped = im.crop((0, 0, 1050, y + 1))
+                            cropped.save(abs_png_path)
+                            print(f"📐 Cleanly aligned & cropped newspaper to: {cropped.size[0]}x{cropped.size[1]}px")
+                            break
+                except Exception as e:
+                    pass
                 print(f"📸 Exported Front-Page PNG: {abs_png_path}")
             else:
                 print(f"⚠️ PNG export issue: {res_png.stderr}")
