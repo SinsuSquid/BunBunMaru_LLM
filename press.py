@@ -142,11 +142,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   .masthead-subtitle {{
     font-family: 'Cinzel', serif;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 4px;
     font-weight: 900;
     margin-top: 6px;
-    color: #4a3e35;
+    color: #2c2520;
+    text-transform: uppercase;
+  }}
+
+  .masthead-tagline {{
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 2px;
+    color: #655447;
+    text-transform: uppercase;
   }}
 
   .masthead-meta-right {{
@@ -472,7 +484,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <span>文々。新聞</span>
         <div class="tengu-seal">文</div>
       </div>
-      <div class="masthead-subtitle">BUNBUNMARU NEWSPAPER — FASTEST SCOOP IN GENSOKYO</div>
+      <div class="masthead-subtitle">BUNBUNMARU NEWSPAPER</div>
+      <div class="masthead-tagline">FASTEST SCOOP IN GENSOKYO</div>
     </div>
     <div class="masthead-meta-right">
       <strong>Editor & Photo: Aya Shameimaru</strong><br>
