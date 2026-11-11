@@ -548,7 +548,6 @@ def render_newspaper(
     image_path: str,
     output_html_path: str = "bunbunmaru_newspaper.html",
     output_png_path: str = "bunbunmaru_newspaper.png",
-    output_pdf_path: str = "bunbunmaru_newspaper.pdf",
     export_images: bool = True
 ):
     """Render structured story JSON + image into authentic Bunbunmaru newspaper."""
@@ -605,7 +604,6 @@ def render_newspaper(
         if os.path.exists(chrome_bin):
             abs_html_path = os.path.abspath(output_html_path)
             abs_png_path = os.path.abspath(output_png_path)
-            abs_pdf_path = os.path.abspath(output_pdf_path)
 
             print("🖨️ Running Bunbunmaru Printing Press via Headless Chrome...")
             # Screenshot
@@ -623,20 +621,6 @@ def render_newspaper(
                 print(f"📸 Exported Front-Page PNG: {abs_png_path}")
             else:
                 print(f"⚠️ PNG export issue: {res_png.stderr}")
-
-            # PDF
-            cmd_pdf = [
-                chrome_bin,
-                "--headless",
-                "--disable-gpu",
-                f"--print-to-pdf={abs_pdf_path}",
-                f"file://{abs_html_path}",
-            ]
-            res_pdf = subprocess.run(cmd_pdf, capture_output=True, text=True)
-            if res_pdf.returncode == 0 and os.path.exists(abs_pdf_path):
-                print(f"📄 Exported Broadsheet PDF: {abs_pdf_path}")
-            else:
-                print(f"⚠️ PDF export issue: {res_pdf.stderr}")
 
 if __name__ == "__main__":
     # Test sample with our actual Blahaj run

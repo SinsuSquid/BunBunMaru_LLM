@@ -110,7 +110,6 @@ This single command triggers the full pipeline:
 3. 🖨️ Automatically invokes [`press.py`](press.py) to print:
    - `bunbunmaru_newspaper.html` (interactive web broadsheet)
    - `bunbunmaru_newspaper.png` (high-res broadsheet clipping)
-   - `bunbunmaru_newspaper.pdf` (print-ready PDF)
 
 Or run the printing press standalone with any image:
 ```bash
